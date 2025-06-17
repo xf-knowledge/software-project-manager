@@ -1,0 +1,201 @@
+<!-- Section 6-2 Block -->
+<div id="part6-2" class="content-section bg-base-100 p-6 md:p-8 rounded-2xl shadow-xl">
+    <div class="prose max-w-none">
+        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">6.2 名词解释专项</h1>
+        <p>本部分提供核心概念的名词解释练习，帮助你掌握项目管理的专业术语和定义。</p>
+
+        <div class="space-y-6">
+            <!-- 名词解释1 -->
+            <div class="card bg-gradient-to-r from-blue-50 to-indigo-50 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg text-blue-700">1. 工作分解结构（WBS - Work Breakdown Structure）</h4>
+                    <p class="text-gray-600 mb-4">请解释WBS的定义、作用和创建原则。</p>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('wbs-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            查看答案
+                        </button>
+                        <div id="wbs-answer" class="alert alert-info mt-3 hidden border-l-4 border-blue-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-3">标准答案</h4>
+                                    <div class="space-y-2">
+                                        <p><strong>定义：</strong>WBS是将项目可交付成果和项目工作分解成较小的、更易于管理的组件的层次结构。</p>
+                                        <p><strong>作用：</strong></p>
+                                        <ul class="list-disc ml-6 space-y-1">
+                                            <li>明确项目范围边界</li>
+                                            <li>为时间估算和成本估算提供基础</li>
+                                            <li>便于分配责任和资源</li>
+                                            <li>支持项目监控和控制</li>
+                                        </ul>
+                                        <p><strong>创建原则：</strong></p>
+                                        <ul class="list-disc ml-6 space-y-1">
+                                            <li>100%规则：覆盖项目全部范围</li>
+                                            <li>相互独立：各组件不重叠</li>
+                                            <li>结果导向：关注可交付成果</li>
+                                            <li>适度分解：便于管理和控制</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 名词解释2 -->
+            <div class="card bg-gradient-to-r from-green-50 to-emerald-50 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg text-green-700">2. 关键路径（Critical Path）</h4>
+                    <p class="text-gray-600 mb-4">请解释关键路径的定义、特点和管理意义。</p>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('cp-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            查看答案
+                        </button>
+                        <div id="cp-answer" class="alert alert-info mt-3 hidden border-l-4 border-blue-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-3">标准答案</h4>
+                                    <div class="space-y-2">
+                                        <p><strong>定义：</strong>关键路径是项目网络图中持续时间最长的活动序列，决定了项目的最短完成时间。</p>
+                                        <p><strong>特点：</strong></p>
+                                        <ul class="list-disc ml-6 space-y-1">
+                                            <li>路径上的活动总浮动时间为零</li>
+                                            <li>任何关键活动的延误都会导致项目延期</li>
+                                            <li>一个项目可能有多条关键路径</li>
+                                            <li>随着项目进展可能发生变化</li>
+                                        </ul>
+                                        <p><strong>管理意义：</strong></p>
+                                        <ul class="list-disc ml-6 space-y-1">
+                                            <li>识别项目进度控制的重点</li>
+                                            <li>优化资源配置</li>
+                                            <li>制定应急计划</li>
+                                            <li>进度压缩的依据</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 名词解释3 -->
+            <div class="card bg-gradient-to-r from-purple-50 to-violet-50 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg text-purple-700">3. 挣值管理（EVM - Earned Value Management）</h4>
+                    <p class="text-gray-600 mb-4">请解释EVM的基本概念、三个基准值和主要作用。</p>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('evm-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            查看答案
+                        </button>
+                        <div id="evm-answer" class="alert alert-info mt-3 hidden border-l-4 border-blue-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-3">标准答案</h4>
+                                    <div class="space-y-2">
+                                        <p><strong>基本概念：</strong>EVM是一种综合考虑范围、进度和成本绩效的项目管理技术，通过比较计划工作、已完成工作和实际花费来衡量项目绩效。</p>
+                                        <p><strong>三个基准值：</strong></p>
+                                        <ul class="list-disc ml-6 space-y-1">
+                                            <li><strong>PV (计划价值)：</strong>到某时点应该完成的工作的预算成本</li>
+                                            <li><strong>EV (挣值)：</strong>到某时点实际完成工作的预算成本</li>
+                                            <li><strong>AC (实际成本)：</strong>到某时点实际完成工作的实际成本</li>
+                                        </ul>
+                                        <p><strong>主要作用：</strong></p>
+                                        <ul class="list-disc ml-6 space-y-1">
+                                            <li>客观评估项目绩效</li>
+                                            <li>预测项目最终成本和工期</li>
+                                            <li>为项目决策提供数据支持</li>
+                                            <li>及早发现项目偏差</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 名词解释4 -->
+            <div class="card bg-gradient-to-r from-orange-50 to-red-50 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg text-orange-700">4. RACI矩阵</h4>
+                    <p class="text-gray-600 mb-4">请解释RACI矩阵的含义、四个字母的具体意义和应用场景。</p>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('raci-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            查看答案
+                        </button>
+                        <div id="raci-answer" class="alert alert-info mt-3 hidden border-l-4 border-blue-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-3">标准答案</h4>
+                                    <div class="space-y-2">
+                                        <p><strong>定义：</strong>RACI矩阵是一种明确项目角色和责任的工具，通过矩阵形式展示谁负责做什么工作。</p>
+                                        <p><strong>四个字母含义：</strong></p>
+                                        <ul class="list-disc ml-6 space-y-1">
+                                            <li><strong>R (Responsible):</strong> 负责执行 - 实际完成任务的人</li>
+                                            <li><strong>A (Accountable):</strong> 承担责任 - 对任务结果负最终责任的人（通常只有一个）</li>
+                                            <li><strong>C (Consulted):</strong> 咨询 - 在决策前需要咨询意见的人</li>
+                                            <li><strong>I (Informed):</strong> 知情 - 需要了解决策或结果的人</li>
+                                        </ul>
+                                        <p><strong>应用场景：</strong></p>
+                                        <ul class="list-disc ml-6 space-y-1">
+                                            <li>明确团队成员职责</li>
+                                            <li>避免责任重叠或空白</li>
+                                            <li>改善沟通效率</li>
+                                            <li>制定决策流程</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 学习提示 -->
+        <div class="alert alert-info mt-8">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div>
+                <h3 class="font-bold">学习建议</h3>
+                <p>名词解释题要求准确掌握专业术语的定义、特点和应用。建议：</p>
+                <ul class="list-disc ml-6 mt-2">
+                    <li>理解概念的本质含义，而非死记硬背</li>
+                    <li>掌握概念之间的联系和区别</li>
+                    <li>结合实际案例理解概念的应用</li>
+                    <li>注意答题的条理性和完整性</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> 

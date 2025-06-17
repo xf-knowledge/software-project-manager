@@ -59,6 +59,9 @@ function initializeCharts() {
         initializeRiskMatrix();
         initializeStakeholderChart();
         initializeMethodologyChart();
+        initializeExamStatsChart();
+        initializeKnowledgeChart();
+        initializeDifficultyChart();
         
         // 窗口大小改变时重新调整图表
         window.addEventListener('resize', function () {
@@ -78,7 +81,10 @@ function resizeAllCharts() {
         'evm-chart', 
         'risk-matrix-chart',
         'stakeholder-chart',
-        'methodology-comparison-chart'
+        'methodology-comparison-chart',
+        'exam-stats-chart',
+        'knowledge-coverage-chart',
+        'difficulty-chart'
     ];
     
     chartIds.forEach(id => {

@@ -1,0 +1,309 @@
+<!-- Section 6-1 Block -->
+<div id="part6-1" class="content-section bg-base-100 p-6 md:p-8 rounded-2xl shadow-xl">
+    <div class="prose max-w-none">
+        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">6.1 选择题专项训练</h1>
+        <p>本部分提供精选的选择题练习，涵盖软件项目管理的核心知识点，支持即时反馈和实时统计。</p>
+
+        <!-- 进度统计面板 -->
+        <div class="stats shadow mb-6">
+            <div class="stat">
+                <div class="stat-figure text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div class="stat-title">已完成题目</div>
+                <div class="stat-value text-primary" id="completed-count">0</div>
+                <div class="stat-desc">共 5 题选择题</div>
+            </div>
+            
+            <div class="stat">
+                <div class="stat-figure text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div class="stat-title">正确答案</div>
+                <div class="stat-value text-secondary" id="correct-count">0</div>
+                <div class="stat-desc">正确率 <span id="accuracy-rate">0%</span></div>
+            </div>
+            
+            <div class="stat">
+                <div class="stat-figure text-accent">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <div class="stat-title">用时</div>
+                <div class="stat-value text-accent" id="timer-display">00:00</div>
+                <div class="stat-desc">
+                    <button class="btn btn-xs btn-accent" onclick="startTimer()">开始</button>
+                    <button class="btn btn-xs btn-ghost" onclick="resetTimer()">重置</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="space-y-6">
+            <!-- 选择题1 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">1. 以下哪一项不属于项目的基本特征？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q1" class="radio radio-primary mr-2" value="A">
+                            <span>A. 独特性</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q1" class="radio radio-primary mr-2" value="B">
+                            <span>B. 临时性</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q1" class="radio radio-primary mr-2" value="C">
+                            <span>C. 重复性</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q1" class="radio radio-primary mr-2" value="D">
+                            <span>D. 明确的目标</span>
+                        </label>
+                    </div>
+                    <!-- 即时反馈区域 -->
+                    <div id="q1-feedback"></div>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q1-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            查看答案
+                        </button>
+                        <div id="q1-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">项目的基本特征是独特性和临时性，与组织的重复性、持续性的"运营"活动相对。重复性是运营活动的特征，不是项目的特征。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 选择题2 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">2. 在项目启动阶段，用于正式批准项目存在并授予项目经理权力的关键文件是？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q2" class="radio radio-primary mr-2" value="A">
+                            <span>A. 项目范围说明书</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q2" class="radio radio-primary mr-2" value="B">
+                            <span>B. 项目管理计划</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q2" class="radio radio-primary mr-2" value="C">
+                            <span>C. 风险登记册</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q2" class="radio radio-primary mr-2" value="D">
+                            <span>D. 项目章程</span>
+                        </label>
+                    </div>
+                    <!-- 即时反馈区域 -->
+                    <div id="q2-feedback"></div>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q2-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            查看答案
+                        </button>
+                        <div id="q2-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：D</strong></p>
+                                    <p class="mt-2">项目章程是正式授权项目的文件，确立项目存在的合法性并授予项目经理权力。它是项目启动阶段的核心输出物。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 选择题3 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">3. 在"弱矩阵"组织结构中，项目权力主要掌握在谁手中？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="A">
+                            <span>A. 项目经理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="B">
+                            <span>B. 职能经理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="C">
+                            <span>C. 项目团队</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="D">
+                            <span>D. 项目发起人</span>
+                        </label>
+                    </div>
+                    <!-- 即时反馈区域 -->
+                    <div id="q3-feedback"></div>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q3-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            查看答案
+                        </button>
+                        <div id="q3-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：B</strong></p>
+                                    <p class="mt-2">在弱矩阵组织结构中，项目经理更多是协调员角色，权力仍在职能经理手中。项目经理的权威有限，主要负责沟通和协调。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 选择题4 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">4. 项目团队为客户开发了一项最初需求中并未包含，也未经正式批准的额外功能，这种行为被称为？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="A">
+                            <span>A. 范围蔓延 (Scope Creep)</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="B">
+                            <span>B. 镀金 (Gold Plating)</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="C">
+                            <span>C. 快速跟进 (Fast Tracking)</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="D">
+                            <span>D. 赶工 (Crashing)</span>
+                        </label>
+                    </div>
+                    <!-- 即时反馈区域 -->
+                    <div id="q4-feedback"></div>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q4-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            查看答案
+                        </button>
+                        <div id="q4-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：B</strong></p>
+                                    <p class="mt-2">"镀金"(Gold Plating)指提供超出范围的功能，通常是团队主观认为有价值但未经客户要求的功能。而"范围蔓延"(Scope Creep)通常指未经控制的范围变更。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 选择题5 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">5. 在挣值管理中，用于衡量项目成本效率的指标——成本绩效指数(CPI)的计算公式是？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="A">
+                            <span>A. EV / PV</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="B">
+                            <span>B. AC / EV</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="C">
+                            <span>C. EV / AC</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="D">
+                            <span>D. PV / AC</span>
+                        </label>
+                    </div>
+                    <!-- 即时反馈区域 -->
+                    <div id="q5-feedback"></div>
+                    
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q5-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            查看答案
+                        </button>
+                        <div id="q5-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">CPI = 挣值(EV) / 实际成本(AC)，用于衡量项目成本效率。CPI > 1 表示成本效率良好，CPI < 1 表示成本超支。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 操作按钮区域 -->
+        <div class="flex justify-center gap-4 mt-8">
+            <button class="btn btn-success gap-2" onclick="showScore()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+                查看得分
+            </button>
+            <button class="btn btn-outline gap-2" onclick="resetTimer()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                重新开始
+            </button>
+        </div>
+    </div>
+</div> 

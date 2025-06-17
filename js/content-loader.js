@@ -179,6 +179,31 @@ class ContentLoader {
                     setTimeout(initializeMethodologyChart, 100);
                 }
                 break;
+            case 'part6-1':
+                if (typeof initializeQuestionListeners === 'function') {
+                    setTimeout(initializeQuestionListeners, 100);
+                }
+                break;
+            case 'part6-2':
+                // 名词解释页面不需要特殊图表
+                break;
+            case 'part6-3':
+                // 计算题页面不需要特殊图表
+                break;
+            case 'part6-4':
+                // 案例分析页面不需要特殊图表
+                break;
+            case 'part6-5':
+                if (typeof initializeExamStatsChart === 'function') {
+                    setTimeout(initializeExamStatsChart, 100);
+                }
+                if (typeof initializeKnowledgeChart === 'function') {
+                    setTimeout(initializeKnowledgeChart, 200);
+                }
+                if (typeof initializeDifficultyChart === 'function') {
+                    setTimeout(initializeDifficultyChart, 300);
+                }
+                break;
         }
     }
 

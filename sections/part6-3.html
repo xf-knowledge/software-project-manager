@@ -1,0 +1,256 @@
+<!-- Section 6-3 Block -->
+<div id="part6-3" class="content-section bg-base-100 p-6 md:p-8 rounded-2xl shadow-xl">
+    <div class="prose max-w-none">
+        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">6.3 计算题专项训练</h1>
+        <p>本部分提供关键路径法(CPM)和挣值管理(EVM)的计算练习，这些是考试中的重点计算题型。</p>
+
+        <div class="space-y-8">
+            <!-- CPM计算题 -->
+            <div class="card bg-gradient-to-r from-cyan-50 to-blue-50 shadow-lg">
+                <div class="card-body">
+                    <h3 class="card-title text-xl text-cyan-700 mb-4">📊 CPM关键路径计算</h3>
+                    
+                    <div class="bg-white p-4 rounded-lg border-2 border-cyan-200 mb-4">
+                        <h4 class="font-bold text-lg mb-3">题目：某软件开发项目的活动网络图如下所示，请计算：</h4>
+                        
+                        <div class="overflow-x-auto mb-4">
+                            <table class="table table-compact w-full border">
+                                <thead>
+                                    <tr class="bg-cyan-100">
+                                        <th>活动</th>
+                                        <th>前置活动</th>
+                                        <th>持续时间(天)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>A-需求分析</td><td>-</td><td>5</td></tr>
+                                    <tr><td>B-系统设计</td><td>A</td><td>8</td></tr>
+                                    <tr><td>C-数据库设计</td><td>A</td><td>6</td></tr>
+                                    <tr><td>D-界面设计</td><td>A</td><td>4</td></tr>
+                                    <tr><td>E-编程开发</td><td>B,C</td><td>12</td></tr>
+                                    <tr><td>F-界面开发</td><td>D</td><td>7</td></tr>
+                                    <tr><td>G-系统集成</td><td>E,F</td><td>3</td></tr>
+                                    <tr><td>H-系统测试</td><td>G</td><td>5</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <p><strong>要求计算：</strong></p>
+                            <ol class="list-decimal ml-6 space-y-1">
+                                <li>项目的最短完成时间</li>
+                                <li>关键路径</li>
+                                <li>活动D的总浮动时间</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('cpm-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            查看详细解答
+                        </button>
+                        <div id="cpm-answer" class="alert alert-success mt-3 hidden border-l-4 border-green-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div class="w-full">
+                                    <h4 class="font-bold text-lg mb-3">详细解答过程</h4>
+                                    
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">步骤1：计算各活动的最早开始时间(ES)和最早结束时间(EF)</h5>
+                                            <div class="bg-gray-50 p-3 rounded text-sm">
+                                                <p>A: ES=0, EF=0+5=5</p>
+                                                <p>B: ES=5, EF=5+8=13</p>
+                                                <p>C: ES=5, EF=5+6=11</p>
+                                                <p>D: ES=5, EF=5+4=9</p>
+                                                <p>E: ES=max(13,11)=13, EF=13+12=25</p>
+                                                <p>F: ES=9, EF=9+7=16</p>
+                                                <p>G: ES=max(25,16)=25, EF=25+3=28</p>
+                                                <p>H: ES=28, EF=28+5=33</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">步骤2：计算各活动的最晚开始时间(LS)和最晚结束时间(LF)</h5>
+                                            <div class="bg-gray-50 p-3 rounded text-sm">
+                                                <p>H: LF=33, LS=33-5=28</p>
+                                                <p>G: LF=28, LS=28-3=25</p>
+                                                <p>F: LF=25, LS=25-7=18</p>
+                                                <p>E: LF=25, LS=25-12=13</p>
+                                                <p>D: LF=18, LS=18-4=14</p>
+                                                <p>C: LF=13, LS=13-6=7</p>
+                                                <p>B: LF=13, LS=13-8=5</p>
+                                                <p>A: LF=min(5,7,14)=5, LS=5-5=0</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">步骤3：计算总浮动时间(TF = LS - ES)</h5>
+                                            <div class="bg-gray-50 p-3 rounded text-sm">
+                                                <p>A: TF=0-0=0</p>
+                                                <p>B: TF=5-5=0</p>
+                                                <p>C: TF=7-5=2</p>
+                                                <p>D: TF=14-5=9</p>
+                                                <p>E: TF=13-13=0</p>
+                                                <p>F: TF=18-9=9</p>
+                                                <p>G: TF=25-25=0</p>
+                                                <p>H: TF=28-28=0</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="border-l-4 border-blue-500 pl-4 bg-blue-50 p-3 rounded">
+                                            <h5 class="font-semibold text-base mb-2">最终答案：</h5>
+                                            <ol class="list-decimal ml-6 space-y-1">
+                                                <li><strong>项目最短完成时间：33天</strong></li>
+                                                <li><strong>关键路径：A→B→E→G→H</strong> (总浮动时间为0的活动)</li>
+                                                <li><strong>活动D的总浮动时间：9天</strong></li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EVM计算题 -->
+            <div class="card bg-gradient-to-r from-emerald-50 to-green-50 shadow-lg">
+                <div class="card-body">
+                    <h3 class="card-title text-xl text-emerald-700 mb-4">💰 EVM挣值管理计算</h3>
+                    
+                    <div class="bg-white p-4 rounded-lg border-2 border-emerald-200 mb-4">
+                        <h4 class="font-bold text-lg mb-3">题目：某项目执行到第8周时的挣值数据如下：</h4>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                            <div class="bg-blue-50 p-3 rounded">
+                                <p class="font-semibold text-blue-700">计划价值 (PV)</p>
+                                <p class="text-xl font-bold">$120,000</p>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded">
+                                <p class="font-semibold text-green-700">挣值 (EV)</p>
+                                <p class="text-xl font-bold">$100,000</p>
+                            </div>
+                            <div class="bg-red-50 p-3 rounded">
+                                <p class="font-semibold text-red-700">实际成本 (AC)</p>
+                                <p class="text-xl font-bold">$110,000</p>
+                            </div>
+                        </div>
+                        
+                        <p><strong>项目总预算（BAC）：$400,000</strong></p>
+                        
+                        <div class="space-y-2 mt-4">
+                            <p><strong>要求计算：</strong></p>
+                            <ol class="list-decimal ml-6 space-y-1">
+                                <li>成本偏差 (CV) 和成本绩效指数 (CPI)</li>
+                                <li>进度偏差 (SV) 和进度绩效指数 (SPI)</li>
+                                <li>完工估算 (EAC) 和完工偏差 (VAC)</li>
+                                <li>分析项目当前状态</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('evm-calc-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            查看详细解答
+                        </button>
+                        <div id="evm-calc-answer" class="alert alert-success mt-3 hidden border-l-4 border-green-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div class="w-full">
+                                    <h4 class="font-bold text-lg mb-3">详细解答过程</h4>
+                                    
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">已知数据：</h5>
+                                            <div class="bg-gray-50 p-3 rounded text-sm">
+                                                <p>PV = $120,000</p>
+                                                <p>EV = $100,000</p>
+                                                <p>AC = $110,000</p>
+                                                <p>BAC = $400,000</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">1. 成本相关指标：</h5>
+                                            <div class="bg-blue-50 p-3 rounded text-sm space-y-1">
+                                                <p><strong>成本偏差 (CV)</strong> = EV - AC = $100,000 - $110,000 = <span class="text-red-600 font-bold">-$10,000</span></p>
+                                                <p><strong>成本绩效指数 (CPI)</strong> = EV / AC = $100,000 ÷ $110,000 = <span class="text-red-600 font-bold">0.91</span></p>
+                                                <p class="text-xs text-gray-600">解释：CV < 0 且 CPI < 1，表示成本超支</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">2. 进度相关指标：</h5>
+                                            <div class="bg-green-50 p-3 rounded text-sm space-y-1">
+                                                <p><strong>进度偏差 (SV)</strong> = EV - PV = $100,000 - $120,000 = <span class="text-red-600 font-bold">-$20,000</span></p>
+                                                <p><strong>进度绩效指数 (SPI)</strong> = EV / PV = $100,000 ÷ $120,000 = <span class="text-red-600 font-bold">0.83</span></p>
+                                                <p class="text-xs text-gray-600">解释：SV < 0 且 SPI < 1，表示进度滞后</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">3. 完工预测：</h5>
+                                            <div class="bg-purple-50 p-3 rounded text-sm space-y-1">
+                                                <p><strong>完工估算 (EAC)</strong> = BAC / CPI = $400,000 ÷ 0.91 = <span class="text-red-600 font-bold">$439,560</span></p>
+                                                <p><strong>完工偏差 (VAC)</strong> = BAC - EAC = $400,000 - $439,560 = <span class="text-red-600 font-bold">-$39,560</span></p>
+                                                <p class="text-xs text-gray-600">解释：预计项目完工时将超出预算$39,560</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="border-l-4 border-orange-500 pl-4 bg-orange-50 p-3 rounded">
+                                            <h5 class="font-semibold text-base mb-2">4. 项目状态分析：</h5>
+                                            <ul class="list-disc ml-6 space-y-1 text-sm">
+                                                <li><strong>成本状态：</strong>项目超出预算，每花费$1只产生$0.91的价值</li>
+                                                <li><strong>进度状态：</strong>项目进度严重滞后，只完成了计划工作的83%</li>
+                                                <li><strong>总体状态：</strong>项目处于"双重困境"——既超预算又进度滞后</li>
+                                                <li><strong>建议措施：</strong>需要立即采取纠正措施，考虑增加资源或调整范围</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 公式参考卡片 -->
+        <div class="alert alert-info mt-8">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div>
+                <h3 class="font-bold">常用公式参考</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3 text-sm">
+                    <div>
+                        <h4 class="font-semibold">CPM计算：</h4>
+                        <ul class="list-disc ml-4">
+                            <li>总浮动时间 = LS - ES = LF - EF</li>
+                            <li>自由浮动时间 = ES(后续) - EF(当前)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">EVM计算：</h4>
+                        <ul class="list-disc ml-4">
+                            <li>CV = EV - AC, CPI = EV / AC</li>
+                            <li>SV = EV - PV, SPI = EV / PV</li>
+                            <li>EAC = BAC / CPI, VAC = BAC - EAC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
