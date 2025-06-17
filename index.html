@@ -29,6 +29,27 @@
     <script type="text/javascript" id="MathJax-script" async
         src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
+    
+    <!-- 自定义字体样式 -->
+    <style>
+        @font-face {
+            font-family: 'Maple';
+            src: url('./font/maple-font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        
+        /* 全局字体应用 */
+        body, html {
+            font-family: 'Maple', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        /* 确保所有文本元素都使用自定义字体 */
+        * {
+            font-family: inherit;
+        }
+    </style>
 </head>
 
 <body class="bg-base-200">
