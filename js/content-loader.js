@@ -77,8 +77,10 @@ class ContentLoader {
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = content;
             
-            // 添加到页面
-            container.appendChild(tempDiv.firstElementChild);
+            // 添加所有子元素到页面（不仅仅是第一个）
+            while (tempDiv.firstElementChild) {
+                container.appendChild(tempDiv.firstElementChild);
+            }
             
             // 更新当前加载的章节
             this.currentSection = sectionId;

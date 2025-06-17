@@ -53,22 +53,35 @@ function initializeCharts() {
     }
 
     try {
-        // 初始化各个图表
-        initializeFailureChart();
-        initializeEVMChart();
-        initializeRiskMatrix();
-        initializeStakeholderChart();
-        initializeMethodologyChart();
-        initializeExamStatsChart();
-        initializeKnowledgeChart();
-        initializeDifficultyChart();
+        // 初始化各个图表（只调用存在的函数）
+        if (typeof initializeFailureChart === 'function') {
+            initializeFailureChart();
+        }
+        if (typeof initializeEVMChart === 'function') {
+            initializeEVMChart();
+        }
+        if (typeof initializeRiskMatrix === 'function') {
+            initializeRiskMatrix();
+        }
+        if (typeof initializeStakeholderChart === 'function') {
+            initializeStakeholderChart();
+        }
+        if (typeof initializeMethodologyChart === 'function') {
+            initializeMethodologyChart();
+        }
+        if (typeof initializeKnowledgeChart === 'function') {
+            initializeKnowledgeChart();
+        }
+        if (typeof initializeDifficultyChart === 'function') {
+            initializeDifficultyChart();
+        }
         
         // 窗口大小改变时重新调整图表
         window.addEventListener('resize', function () {
             resizeAllCharts();
         });
         
-        console.log('所有图表初始化完成');
+        console.log('图表初始化完成');
     } catch (error) {
         console.error('图表初始化失败:', error);
     }
