@@ -43,48 +43,6 @@
 - **数学渲染**: MathJax 3
 - **主题系统**: DaisyUI 主题支持
 
-## 快速开始
-
-### 本地运行
-
-1. 克隆项目到本地
-```bash
-git clone https://github.com/yourusername/knowledge-sortware.git
-cd knowledge-sortware
-```
-
-2. 使用本地服务器打开项目
-```bash
-# 使用 Python 启动简单服务器
-python3 -m http.server 8000
-
-# 或者使用 Node.js 的 http-server
-npx http-server . -p 8000
-```
-
-3. 在浏览器中访问 `http://localhost:8000`
-
-### 直接访问
-
-也可以直接在浏览器中打开 `index.html` 文件进行查看。
-
-## 项目结构
-
-```
-knowledge-sortware/
-├── index.html              # 主页面文件
-├── asserts/                 # 资源文件夹
-│   └── imgs/               # 图片资源
-│       ├── pmbok.png       # PMBOK知识体系图
-│       ├── project-life-time.png  # 项目生命周期图
-│       ├── project-manager-process.png  # 项目管理过程图
-│       ├── project-manager-trale.png   # 项目管理三角形
-│       ├── cpm.png         # 关键路径法图
-│       ├── software-quality.png  # 软件质量模型图
-│       └── tcpi.png        # TCPI指标图
-└── README.md               # 项目说明文档
-```
-
 ## 学习建议
 
 1. **系统性学习** - 按照章节顺序逐步学习，确保基础概念的牢固掌握
@@ -120,7 +78,7 @@ knowledge-sortware/
 
 - 提交 Issue
 - 发起 Pull Request
-- 邮件联系：[your-email@example.com]
+- 邮件联系：[gm@x-lf.cn](gm@x-lf.cn)
 
 ---
 
