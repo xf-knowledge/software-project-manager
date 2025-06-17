@@ -1,8 +1,8 @@
 <!-- Section 6-1 Block -->
 <div id="part6-1" class="content-section bg-base-100 p-6 md:p-8 rounded-2xl shadow-xl">
     <div class="prose max-w-none">
-        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">6.1 选择题专项训练</h1>
-        <p>本部分提供精选的选择题练习，涵盖软件项目管理的核心知识点，支持即时反馈和实时统计。</p>
+        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">6.1 终极百题挑战（完全解析版）</h1>
+        <p>本部分提供《软件项目管理》终极百题挑战，涵盖项目管理基础、范围时间成本管理、人员过程沟通管理、风险采购整合管理、以及方法论与综合策略等全部核心知识点，支持即时反馈和实时统计。</p>
 
         <!-- 进度统计面板 -->
         <div class="stats shadow mb-6">
@@ -14,7 +14,7 @@
                 </div>
                 <div class="stat-title">已完成题目</div>
                 <div class="stat-value text-primary" id="completed-count">0</div>
-                <div class="stat-desc">共 5 题选择题</div>
+                <div class="stat-desc">共 100 题选择题</div>
             </div>
             
             <div class="stat">
@@ -42,37 +42,53 @@
                 </div>
             </div>
         </div>
+
+        <!-- 题目分组显示 -->
+        <div class="alert alert-info mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <div>
+                <h3 class="font-bold">题目分组说明</h3>
+                <div class="text-sm">
+                    第1-18题：项目管理基础 | 第19-55题：范围、时间与成本管理 | 第56-83题：人员、过程与沟通管理 | 第84-95题：风险、采购与整合管理 | 第96-100题：方法论与综合策略
+                </div>
+            </div>
+        </div>
         
         <div class="space-y-6">
-            <!-- 选择题1 -->
+            <!-- 第一部分：项目管理基础 (1-18题) -->
+            <div class="divider">
+                <div class="badge badge-primary badge-lg">第一部分：项目管理基础 (1-18题)</div>
+            </div>
+
+            <!-- 题目1 -->
             <div class="card bg-base-200 shadow-md">
                 <div class="card-body">
-                    <h4 class="card-title text-lg">1. 以下哪一项不属于项目的基本特征？</h4>
+                    <h4 class="card-title text-lg">1. 根据课程导论，关于IT项目失败的统计数据中，项目平均超出预定时间的比例是多少？</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
                         <label class="label cursor-pointer justify-start">
                             <input type="radio" name="q1" class="radio radio-primary mr-2" value="A">
-                            <span>A. 独特性</span>
+                            <span>A. 189%</span>
                         </label>
                         <label class="label cursor-pointer justify-start">
                             <input type="radio" name="q1" class="radio radio-primary mr-2" value="B">
-                            <span>B. 临时性</span>
+                            <span>B. 16%</span>
                         </label>
                         <label class="label cursor-pointer justify-start">
                             <input type="radio" name="q1" class="radio radio-primary mr-2" value="C">
-                            <span>C. 重复性</span>
+                            <span>C. 222%</span>
                         </label>
                         <label class="label cursor-pointer justify-start">
                             <input type="radio" name="q1" class="radio radio-primary mr-2" value="D">
-                            <span>D. 明确的目标</span>
+                            <span>D. 50%</span>
                         </label>
                     </div>
-                    <!-- 即时反馈区域 -->
                     <div id="q1-feedback"></div>
-                    
                     <div class="mt-4">
                         <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q1-answer')">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                             </svg>
                             查看答案
@@ -85,7 +101,7 @@
                                 <div>
                                     <h4 class="font-bold text-lg mb-2">详细解析</h4>
                                     <p><strong>答案：C</strong></p>
-                                    <p class="mt-2">项目的基本特征是独特性和临时性，与组织的重复性、持续性的"运营"活动相对。重复性是运营活动的特征，不是项目的特征。</p>
+                                    <p class="mt-2">A. 189%: 这是项目平均超支的成本比例，而非时间比例。B. 16%: 这是IT项目的平均成功率，是一个非常低的数据。C. 222%: 正确。根据第一部分学习资料，这是项目平均超出预定时间的惊人比例。D. 50%: 这是需要进行补救的项目的比例。</p>
                                 </div>
                             </div>
                         </div>
@@ -93,201 +109,668 @@
                 </div>
             </div>
 
-            <!-- 选择题2 -->
+            <!-- 题目2 -->
             <div class="card bg-base-200 shadow-md">
                 <div class="card-body">
-                    <h4 class="card-title text-lg">2. 在项目启动阶段，用于正式批准项目存在并授予项目经理权力的关键文件是？</h4>
+                    <h4 class="card-title text-lg">2. 以下哪一项不属于项目的基本特征？</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
                         <label class="label cursor-pointer justify-start">
                             <input type="radio" name="q2" class="radio radio-primary mr-2" value="A">
-                            <span>A. 项目范围说明书</span>
+                            <span>A. 独特性</span>
                         </label>
                         <label class="label cursor-pointer justify-start">
                             <input type="radio" name="q2" class="radio radio-primary mr-2" value="B">
-                            <span>B. 项目管理计划</span>
+                            <span>B. 临时性</span>
                         </label>
                         <label class="label cursor-pointer justify-start">
                             <input type="radio" name="q2" class="radio radio-primary mr-2" value="C">
-                            <span>C. 风险登记册</span>
+                            <span>C. 重复性</span>
                         </label>
                         <label class="label cursor-pointer justify-start">
                             <input type="radio" name="q2" class="radio radio-primary mr-2" value="D">
-                            <span>D. 项目章程</span>
+                            <span>D. 不确定性</span>
                         </label>
                     </div>
-                    <!-- 即时反馈区域 -->
                     <div id="q2-feedback"></div>
-                    
                     <div class="mt-4">
-                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q2-answer')">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                            </svg>
-                            查看答案
-                        </button>
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q2-answer')">查看答案</button>
                         <div id="q2-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
                             <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                <div>
-                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
-                                    <p><strong>答案：D</strong></p>
-                                    <p class="mt-2">项目章程是正式授权项目的文件，确立项目存在的合法性并授予项目经理权力。它是项目启动阶段的核心输出物。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 选择题3 -->
-            <div class="card bg-base-200 shadow-md">
-                <div class="card-body">
-                    <h4 class="card-title text-lg">3. 在"弱矩阵"组织结构中，项目权力主要掌握在谁手中？</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="A">
-                            <span>A. 项目经理</span>
-                        </label>
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="B">
-                            <span>B. 职能经理</span>
-                        </label>
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="C">
-                            <span>C. 项目团队</span>
-                        </label>
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="D">
-                            <span>D. 项目发起人</span>
-                        </label>
-                    </div>
-                    <!-- 即时反馈区域 -->
-                    <div id="q3-feedback"></div>
-                    
-                    <div class="mt-4">
-                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q3-answer')">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                            </svg>
-                            查看答案
-                        </button>
-                        <div id="q3-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
-                            <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                <div>
-                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
-                                    <p><strong>答案：B</strong></p>
-                                    <p class="mt-2">在弱矩阵组织结构中，项目经理更多是协调员角色，权力仍在职能经理手中。项目经理的权威有限，主要负责沟通和协调。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 选择题4 -->
-            <div class="card bg-base-200 shadow-md">
-                <div class="card-body">
-                    <h4 class="card-title text-lg">4. 项目团队为客户开发了一项最初需求中并未包含，也未经正式批准的额外功能，这种行为被称为？</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="A">
-                            <span>A. 范围蔓延 (Scope Creep)</span>
-                        </label>
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="B">
-                            <span>B. 镀金 (Gold Plating)</span>
-                        </label>
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="C">
-                            <span>C. 快速跟进 (Fast Tracking)</span>
-                        </label>
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="D">
-                            <span>D. 赶工 (Crashing)</span>
-                        </label>
-                    </div>
-                    <!-- 即时反馈区域 -->
-                    <div id="q4-feedback"></div>
-                    
-                    <div class="mt-4">
-                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q4-answer')">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                            </svg>
-                            查看答案
-                        </button>
-                        <div id="q4-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
-                            <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
-                                <div>
-                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
-                                    <p><strong>答案：B</strong></p>
-                                    <p class="mt-2">"镀金"(Gold Plating)指提供超出范围的功能，通常是团队主观认为有价值但未经客户要求的功能。而"范围蔓延"(Scope Creep)通常指未经控制的范围变更。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 选择题5 -->
-            <div class="card bg-base-200 shadow-md">
-                <div class="card-body">
-                    <h4 class="card-title text-lg">5. 在挣值管理中，用于衡量项目成本效率的指标——成本绩效指数(CPI)的计算公式是？</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="A">
-                            <span>A. EV / PV</span>
-                        </label>
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="B">
-                            <span>B. AC / EV</span>
-                        </label>
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="C">
-                            <span>C. EV / AC</span>
-                        </label>
-                        <label class="label cursor-pointer justify-start">
-                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="D">
-                            <span>D. PV / AC</span>
-                        </label>
-                    </div>
-                    <!-- 即时反馈区域 -->
-                    <div id="q5-feedback"></div>
-                    
-                    <div class="mt-4">
-                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q5-answer')">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 616 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                            </svg>
-                            查看答案
-                        </button>
-                        <div id="q5-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
-                            <div class="flex items-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                                </svg>
                                 <div>
                                     <h4 class="font-bold text-lg mb-2">详细解析</h4>
                                     <p><strong>答案：C</strong></p>
-                                    <p class="mt-2">CPI = 挣值(EV) / 实际成本(AC)，用于衡量项目成本效率。CPI > 1 表示成本效率良好，CPI < 1 表示成本超支。</p>
+                                    <p class="mt-2">A. 独特性: 项目旨在创造独一无二的产品、服务或成果，是其核心特征。B. 临时性: 项目有明确的开始和结束点，不能无限期进行，是其核心特征。C. 重复性: 正确。"重复性"是与项目相对的"运营(Operation)"的特征，运营是重复和持续的。D. 不确定性: 项目充满风险和未知，是其固有特征。</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- 题目3 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">3. 为创造特定产品、服务或成果而进行的临时性工作，这一定义描述的是？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="A">
+                            <span>A. 运营</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="B">
+                            <span>B. 过程</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="C">
+                            <span>C. 项目</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q3" class="radio radio-primary mr-2" value="D">
+                            <span>D. 阶段</span>
+                        </label>
+                    </div>
+                    <div id="q3-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q3-answer')">查看答案</button>
+                        <div id="q3-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">A. 运营: 指的是组织的日常、重复、持续的工作。B. 过程: 指的是一系列为获得预定结果而执行的相互关联的行动和活动。项目由过程组成，但定义不同。C. 项目: 正确。这是项目管理中对"项目(Project)"最核心的定义。D. 阶段: 指的是项目中逻辑上相关联的一组活动，通常以一个主要可交付成果的完成为标志。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目4 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">4. 组织的日常重复和持续性的工作，被称为？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="A">
+                            <span>A. 项目</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="B">
+                            <span>B. 运营</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="C">
+                            <span>C. 任务</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q4" class="radio radio-primary mr-2" value="D">
+                            <span>D. 实践</span>
+                        </label>
+                    </div>
+                    <div id="q4-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q4-answer')">查看答案</button>
+                        <div id="q4-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：B</strong></p>
+                                    <p class="mt-2">A. 项目: 是独特的、临时性的工作。B. 运营: 正确。运营(Operation)是组织为了维持自身存在而进行的、持续的、重复性的活动。C. 任务: 通常指项目中更小、更具体的工作单元。D. 实践: 指的是做事的方法或惯例，比运营的范围更广。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目5 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">5. 在软件项目的各种独特性质中，哪一项被认为是导致其管理困难的核心挑战？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="A">
+                            <span>A. 技术发展快</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="B">
+                            <span>B. 结果难于测试</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="C">
+                            <span>C. 过程可见性差</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q5" class="radio radio-primary mr-2" value="D">
+                            <span>D. 复杂度高</span>
+                        </label>
+                    </div>
+                    <div id="q5-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q5-answer')">查看答案</button>
+                        <div id="q5-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">A. 技术发展快: 这是一个重要挑战，但不是最核心的管理困难。B. 结果难于测试: 这是一个挑战，但属于质量管理的具体范畴。C. 过程可见性差: 正确。因为软件是无形的，管理者无法直观评估进度和质量，导致预测和控制极为困难，这是最根本的管理挑战。D. 复杂度高: 是软件项目的特性，但"可见性差"使得管理这种复杂度变得更加困难。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目6 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">6. PMBOK定义的五大过程组的正确顺序是？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q6" class="radio radio-primary mr-2" value="A">
+                            <span>A. 规划、启动、执行、监控、收尾</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q6" class="radio radio-primary mr-2" value="B">
+                            <span>B. 启动、执行、规划、监控、收尾</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q6" class="radio radio-primary mr-2" value="C">
+                            <span>C. 启动、规划、执行、监控、收尾</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q6" class="radio radio-primary mr-2" value="D">
+                            <span>D. 启动、规划、监控、执行、收尾</span>
+                        </label>
+                    </div>
+                    <div id="q6-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q6-answer')">查看答案</button>
+                        <div id="q6-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">A、B、D选项均违反了项目管理的逻辑流程。项目必须先被正式启动，然后进行周密规划，之后才能执行。在执行过程中需要并行地进行监控，最后进行收尾。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目7 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">7. 在五大过程组中，正式授权项目并任命项目经理的阶段是？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q7" class="radio radio-primary mr-2" value="A">
+                            <span>A. 规划过程</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q7" class="radio radio-primary mr-2" value="B">
+                            <span>B. 启动过程</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q7" class="radio radio-primary mr-2" value="C">
+                            <span>C. 执行过程</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q7" class="radio radio-primary mr-2" value="D">
+                            <span>D. 收尾过程</span>
+                        </label>
+                    </div>
+                    <div id="q7-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q7-answer')">查看答案</button>
+                        <div id="q7-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：B</strong></p>
+                                    <p class="mt-2">A. 规划过程: 在启动之后，其核心是制定计划。B. 启动过程: 正确。启动过程的核心产出之一就是《项目章程》，这份文件正式批准项目存在并授权项目经理。C. 执行过程: 负责执行计划，消耗大部分资源。D. 收尾过程: 负责正式结束项目。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目8 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">8. 定义目标和行动路线，产出范围说明书、WBS等成果属于哪个过程组？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q8" class="radio radio-primary mr-2" value="A">
+                            <span>A. 规划过程</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q8" class="radio radio-primary mr-2" value="B">
+                            <span>B. 启动过程</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q8" class="radio radio-primary mr-2" value="C">
+                            <span>C. 执行过程</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q8" class="radio radio-primary mr-2" value="D">
+                            <span>D. 监控过程</span>
+                        </label>
+                    </div>
+                    <div id="q8-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q8-answer')">查看答案</button>
+                        <div id="q8-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：A</strong></p>
+                                    <p class="mt-2">A. 规划过程: 正确。规划是"思考"的阶段，定义要做什么、如何做、谁来做、何时做，产出所有指导性文件。B. 启动过程: 负责授权和高层级的定义，不涉及详细的WBS。C. 执行过程: 负责"做"的阶段，产出的是项目可交付成果本身。D. 监控过程: 负责"检查与纠偏"，产出的是绩效报告和变更请求。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目9 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">9. "确保项目做且只做所有必需的工作"是哪个知识领域的核心目标？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q9" class="radio radio-primary mr-2" value="A">
+                            <span>A. 质量管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q9" class="radio radio-primary mr-2" value="B">
+                            <span>B. 范围管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q9" class="radio radio-primary mr-2" value="C">
+                            <span>C. 整体管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q9" class="radio radio-primary mr-2" value="D">
+                            <span>D. 采购管理</span>
+                        </label>
+                    </div>
+                    <div id="q9-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q9-answer')">查看答案</button>
+                        <div id="q9-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：B</strong></p>
+                                    <p class="mt-2">A. 质量管理: 确保项目满足相关质量标准。B. 范围管理: 正确。这是范围管理的核心定义，防止"镀金"和"范围蔓延"。C. 整体管理: 负责协调和统一所有其他知识领域。D. 采购管理: 负责从组织外部获取产品或服务。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目10 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">10. 协调和统一所有其他知识领域，确保项目各部分无缝衔接的知识领域是？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q10" class="radio radio-primary mr-2" value="A">
+                            <span>A. 沟通管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q10" class="radio radio-primary mr-2" value="B">
+                            <span>B. 范围管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q10" class="radio radio-primary mr-2" value="C">
+                            <span>C. 整体管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q10" class="radio radio-primary mr-2" value="D">
+                            <span>D. 干系人管理</span>
+                        </label>
+                    </div>
+                    <div id="q10-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q10-answer')">查看答案</button>
+                        <div id="q10-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">A. 沟通管理: 确保信息及时、恰当的流动，是整体管理的一部分，但不是其全部。B. 范围管理: 只关注项目的工作边界。C. 整体管理: 正确。它像胶水一样，将其他九大知识领域（范围、时间、成本、质量等）粘合在一起，是项目经理的核心职责，负责权衡取舍和整合决策。D. 干系人管理: 关注识别、分析和管理干系人的期望。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目11 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">11. 根据软件工程与项目管理的关系，以下说法正确的是？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q11" class="radio radio-primary mr-2" value="A">
+                            <span>A. 软件工程关注"如何做"，项目管理关注"做什么"</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q11" class="radio radio-primary mr-2" value="B">
+                            <span>B. 项目管理的目标是"正确地把事情做好"</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q11" class="radio radio-primary mr-2" value="C">
+                            <span>C. 软件工程的目标是"做正确的事"</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q11" class="radio radio-primary mr-2" value="D">
+                            <span>D. 软件工程关注产品，项目管理关注过程</span>
+                        </label>
+                    </div>
+                    <div id="q11-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q11-answer')">查看答案</button>
+                        <div id="q11-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：D</strong></p>
+                                    <p class="mt-2">A. 软件工程关注"如何做"，项目管理关注"做什么": 正好说反了。B. 项目管理的目标是"正确地把事情做好": 这是软件工程的目标。C. 软件工程的目标是"做正确的事": 这是项目管理的目标。D. 软件工程关注产品，项目管理关注过程: 正确。软件工程聚焦于产品本身的技术实现，而项目管理聚焦于驱动产品开发的过程。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目12 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">12. "Build the right thing" (做正确的事) 更准确地描述了哪个学科的目标？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q12" class="radio radio-primary mr-2" value="A">
+                            <span>A. 软件工程</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q12" class="radio radio-primary mr-2" value="B">
+                            <span>B. 软件测试</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q12" class="radio radio-primary mr-2" value="C">
+                            <span>C. 软件项目管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q12" class="radio radio-primary mr-2" value="D">
+                            <span>D. 软件架构设计</span>
+                        </label>
+                    </div>
+                    <div id="q12-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q12-answer')">查看答案</button>
+                        <div id="q12-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">A. 软件工程: 其目标是"Build the thing right"（正确地把事情做好），侧重技术实现的正确性。B. 软件测试: 其目标是验证产品是否符合预期，是软件工程的一部分。C. 软件项目管理: 正确。"做正确的事"意味着确保项目从一开始就在正确的方向上，符合战略目标和客户真实需求，这是项目管理的核心价值所在。D. 软件架构设计: 属于软件工程的技术范畴，关注如何构建健壮的系统。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目13 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">13. 在项目生命周期中，成本和人力投入在哪个阶段达到峰值？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q13" class="radio radio-primary mr-2" value="A">
+                            <span>A. 启动阶段</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q13" class="radio radio-primary mr-2" value="B">
+                            <span>B. 规划阶段</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q13" class="radio radio-primary mr-2" value="C">
+                            <span>C. 执行阶段</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q13" class="radio radio-primary mr-2" value="D">
+                            <span>D. 收尾阶段</span>
+                        </label>
+                    </div>
+                    <div id="q13-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q13-answer')">查看答案</button>
+                        <div id="q13-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">A. 启动阶段: 成本和人力投入最低。B. 规划阶段: 成本和人力投入开始增加，但远未到峰值。C. 执行阶段: 正确。在执行阶段，大部分团队成员开始全面投入开发、测试等工作，资源消耗和成本支出会达到最高点。D. 收尾阶段: 成本和人力投入迅速下降。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目14 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">14. 项目失败的首要原因通常被归结为？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q14" class="radio radio-primary mr-2" value="A">
+                            <span>A. 技术问题</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q14" class="radio radio-primary mr-2" value="B">
+                            <span>B. 预算不足</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q14" class="radio radio-primary mr-2" value="C">
+                            <span>C. 不充分的需求规范</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q14" class="radio radio-primary mr-2" value="D">
+                            <span>D. 团队沟通不畅</span>
+                        </label>
+                    </div>
+                    <div id="q14-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q14-answer')">查看答案</button>
+                        <div id="q14-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">A. 技术问题: 是原因之一，但通常源于更早期的规划失误。B. 预算不足: 往往是结果而非原因，通常由范围蔓延或估算不准导致。C. 不充分的需求规范: 正确。第二部分资料开头提到，"失败的项目中，不充分的需求规范是首要原因。"这直接导致了范围不明确、频繁变更和客户最终不满意。D. 团队沟通不畅: 是重要原因，但根源往往也在于目标和范围不清晰。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目15 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">15. 以下哪项是PMBOK定义的十大知识领域之一？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q15" class="radio radio-primary mr-2" value="A">
+                            <span>A. 需求管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q15" class="radio radio-primary mr-2" value="B">
+                            <span>B. 配置管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q15" class="radio radio-primary mr-2" value="C">
+                            <span>C. 风险管理</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q15" class="radio radio-primary mr-2" value="D">
+                            <span>D. 变更管理</span>
+                        </label>
+                    </div>
+                    <div id="q15-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q15-answer')">查看答案</button>
+                        <div id="q15-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">PMBOK十大知识领域包括：整体、范围、时间、成本、质量、人力资源、沟通、风险、采购、干系人管理。A、B、D都不是独立的知识领域，需求管理属于范围管理的一部分。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目16 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">16. 项目的"临时性"意味着？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q16" class="radio radio-primary mr-2" value="A">
+                            <span>A. 项目持续时间很短</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q16" class="radio radio-primary mr-2" value="B">
+                            <span>B. 项目有明确的开始和结束点</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q16" class="radio radio-primary mr-2" value="C">
+                            <span>C. 项目团队成员都是临时工</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q16" class="radio radio-primary mr-2" value="D">
+                            <span>D. 项目的成果是临时的</span>
+                        </label>
+                    </div>
+                    <div id="q16-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q16-answer')">查看答案</button>
+                        <div id="q16-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：B</strong></p>
+                                    <p class="mt-2">A. 项目持续时间很短: 不一定，有的项目可能持续数年。B. 项目有明确的开始和结束点: 正确。"临时性"指项目不能无限期地进行下去，它必须有一个确定的终点。C. 项目团队成员都是临时工: 项目团队成员可以是全职员工。D. 项目的成果是临时的: 项目的成果（如软件、建筑）通常是持久的。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目17 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">17. 软件项目"经验失效快"这一特性主要是由什么引起的？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q17" class="radio radio-primary mr-2" value="A">
+                            <span>A. 团队成员流动性大</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q17" class="radio radio-primary mr-2" value="B">
+                            <span>B. 项目管理方法过时</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q17" class="radio radio-primary mr-2" value="C">
+                            <span>C. 技术的快速更新换代</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q17" class="radio radio-primary mr-2" value="D">
+                            <span>D. 客户需求多变</span>
+                        </label>
+                    </div>
+                    <div id="q17-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q17-answer')">查看答案</button>
+                        <div id="q17-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：C</strong></p>
+                                    <p class="mt-2">A. 团队成员流动性大: 是一个问题，但不是"经验失效"的根本原因。B. 项目管理方法过时: 管理方法相对稳定，技术变化更快。C. 技术的快速更新换代: 正确。软件行业技术栈（编程语言、框架、平台）更新速度极快，几年前成功项目的经验可能很快就不再适用于使用新技术的项目。D. 客户需求多变: 这是项目不确定性的来源，但不是经验失效的主要原因。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 题目18 -->
+            <div class="card bg-base-200 shadow-md">
+                <div class="card-body">
+                    <h4 class="card-title text-lg">18. 在项目监控过程中，发现实际绩效与计划存在偏差时，项目经理应采取？</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q18" class="radio radio-primary mr-2" value="A">
+                            <span>A. 立即收尾项目</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q18" class="radio radio-primary mr-2" value="B">
+                            <span>B. 采取纠正措施</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q18" class="radio radio-primary mr-2" value="C">
+                            <span>C. 重新制定项目章程</span>
+                        </label>
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="q18" class="radio radio-primary mr-2" value="D">
+                            <span>D. 增加项目预算</span>
+                        </label>
+                    </div>
+                    <div id="q18-feedback"></div>
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('q18-answer')">查看答案</button>
+                        <div id="q18-answer" class="alert alert-info mt-3 hidden border-l-4 border-info">
+                            <div class="flex items-start">
+                                <div>
+                                    <h4 class="font-bold text-lg mb-2">详细解析</h4>
+                                    <p><strong>答案：B</strong></p>
+                                    <p class="mt-2">A. 立即收尾项目: 过于极端，除非偏差已无法挽回。B. 采取纠正措施: 正确。监控过程的核心目的就是"发现偏差，分析原因，采取纠正措施"，将项目拉回正轨。C. 重新制定项目章程: 项目章程是启动阶段的文件，通常不会因执行偏差而修改。D. 增加项目预算: 可能是纠正措施之一，但不应是第一反应，需先分析原因。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二部分：范围、时间与成本管理 (19-55题) -->
+            <div class="divider mt-12">
+                <div class="badge badge-secondary badge-lg">第二部分：范围、时间与成本管理 (19-55题)</div>
+            </div>
+
+            <!-- 由于题目数量很多，建议分批添加或使用滚动加载的方式 -->
+            <div class="alert alert-warning">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.98-.833-2.75 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                </svg>
+                <div>
+                    <h3 class="font-bold">注意</h3>
+                    <div class="text-sm">完整的100道题目正在逐步添加中。第一部分的18道基础题目已经完成，可以开始练习。剩余题目将分批添加。</div>
+                </div>
+            </div>
+
         </div>
 
         <!-- 操作按钮区域 -->
