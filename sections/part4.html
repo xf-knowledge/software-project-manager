@@ -1,0 +1,86 @@
+<!-- Section 4 Block -->
+<div id="part4" class="content-section bg-base-100 p-6 md:p-8 rounded-2xl shadow-xl">
+    <div class="prose max-w-none">
+        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">第四部分：管理不确定性与整合</h1>
+        <div id="part4-1" class="content-section mt-8">
+            <h2 class="text-2xl font-semibold">4.1 驾驭未知：项目风险管理</h2>
+            <h3 class="text-xl font-medium mt-4">核心概念</h3>
+            <p>风险是一个不确定的事件，一旦发生，会对项目目标产生积极（机会）或消极（威胁）的影响。风险管理的核心在于<strong>主动</strong>而非被动。关键工具包括用于系统性识别风险的<strong>风险分解结构(RBS)</strong>和用于记录和跟踪所有风险的<strong>风险登记册</strong>。
+            </p>
+
+            <h3 class="text-xl font-medium mt-4">定性风险分析：概率影响矩阵</h3>
+            <p>通过评估每个风险发生的 <strong>概率 (Probability)</strong> 和 <strong>影响
+                    (Impact)</strong>，对风险进行优先级排序，以决定哪些风险需要立即关注。</p>
+            <!-- ECharts container for risk matrix -->
+            <div class="bg-base-200 p-4 rounded-lg my-6 shadow-inner">
+                <h4 class="text-center font-semibold mb-4">风险概率-影响矩阵 (示例)</h4>
+                <div id="risk-matrix-chart" style="width: 100%; height: 450px;"></div>
+            </div>
+
+            <h3 class="text-xl font-medium mt-4">风险应对策略（考试重点）</h3>
+            <div class="overflow-x-auto mt-4">
+                <table class="table w-full table-zebra">
+                    <thead>
+                        <tr>
+                            <th>风险类型</th>
+                            <th>策略</th>
+                            <th>描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4" class="font-bold align-middle bg-error/20">威胁
+                                (Threats)</td>
+                            <td>规避 (Avoid)</td>
+                            <td>改变项目计划，完全消除风险。 (如更换有风险的技术方案)</td>
+                        </tr>
+                        <tr>
+                            <td>转移 (Transfer)</td>
+                            <td>将风险的后果和应对责任转移给第三方。 (如购买保险、外包)</td>
+                        </tr>
+                        <tr>
+                            <td>减轻 (Mitigate)</td>
+                            <td>降低风险发生的概率或其造成的影响。 (如加强测试、做原型)</td>
+                        </tr>
+                        <tr>
+                            <td>接受 (Accept)</td>
+                            <td>不采取措施改变计划，可设立应急储备。 (主动或被动)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" class="font-bold align-middle bg-success/20">机会
+                                (Opportunities)</td>
+                            <td>开拓 (Exploit)</td>
+                            <td>采取措施确保机会100%发生。</td>
+                        </tr>
+                        <tr>
+                            <td>提高 (Enhance)</td>
+                            <td>提高机会发生的概率或其带来的积极影响。</td>
+                        </tr>
+                        <tr>
+                            <td>分享 (Share)</td>
+                            <td>将机会的部分或全部所有权分配给最能抓住该机会的第三方。</td>
+                        </tr>
+                        <tr>
+                            <td>接受 (Accept)</td>
+                            <td>乐于利用出现的机会，但不主动去追求它。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="part4-2" class="content-section mt-8">
+            <h2 class="text-2xl font-semibold">4.2 融会贯通：项目整体管理</h2>
+            <p>项目整体管理是项目经理的核心职责，它像一根主线，将所有其他知识领域的过程和活动串联、整合在一起。</p>
+            <h3 class="text-xl font-medium mt-4">关键过程与文件</h3>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong>制定项目章程:</strong> 这是项目的"出生证明"，正式批准项目存在、并授予项目经理权力。</li>
+                <li><strong>制定项目管理计划:</strong> 这是指导项目如何执行、监控和收尾的主文件，整合了所有子计划和基准。</li>
+                <li><strong>实施整体变更控制:</strong> 任何对项目基准的变更都必须通过正式的评估和审批流程，通常由一个名为 <strong>变更控制委员会
+                        (CCB)</strong> 的机构来决策，从而防止无序的范围蔓延。</li>
+                <li><strong>项目收尾:</strong>
+                    正式结束项目的活动，核心工作包括获得客户对最终成果的<strong>正式验收</strong>，以及进行行政收尾，如<strong>总结经验教训
+                        (Lessons Learned)</strong>、归档记录和解散团队。</li>
+            </ul>
+        </div>
+    </div>
+</div>

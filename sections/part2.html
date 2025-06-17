@@ -1,0 +1,945 @@
+<!-- Section 2 Block -->
+<div id="part2" class="content-section bg-base-100 p-6 md:p-8 rounded-2xl shadow-xl">
+    <div class="prose max-w-none">
+        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">第二部分：核心规划与控制职能（三重制约）</h1>
+        <p>本部分深入探讨项目管理的"铁三角"：范围、时间和成本。这三个领域紧密相连，任何一个领域的变化都将不可避免地影响其他两个。对这部分内容的掌握，对于应对考试中的任何案例分析题都至关重要。
+        </p>
+
+        <!-- Project management triangle image -->
+        <div class="bg-base-200 p-4 rounded-lg my-6 shadow-inner">
+            <h4 class="text-center font-semibold mb-4">项目管理三角形（铁三角）</h4>
+            <div class="text-center">
+                <img src="asserts/imgs/project-manager-trale.png" alt="项目管理三角形（铁三角）"
+                    class="mx-auto max-w-full h-auto rounded-lg shadow-md">
+            </div>
+        </div>
+
+        <div id="part2-1" class="content-section mt-8">
+            <h2 class="text-2xl font-semibold">2.1 定义工作：项目范围管理</h2>
+            <p>项目范围管理是确保项目成功的基础，核心任务是明确"做什么"和"不做什么"。失败的项目中，不充分的需求规范是首要原因。</p>
+            <div class="alert alert-warning mt-4 shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6"
+                    fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <span><strong>核心：</strong> 避免"镀金 (gold-plating)"——即在未经客户要求的情况下，为产品添加超出范围的功能。</span>
+            </div>
+            <h3 class="text-xl font-medium mt-4">范围管理的核心过程</h3>
+            <ul class="list-decimal list-inside space-y-2 mt-2">
+                <li><strong>范围管理规划:</strong> 制定如何定义、核实、控制范围的计划。</li>
+                <li><strong>需求收集:</strong> 通过访谈、研讨会、原型法等技术收集需求。</li>
+                <li><strong>范围定义:</strong> 详细描述项目和产品，产出关键的<strong>项目范围说明书</strong>，明确包含和不包含的内容。</li>
+                <li><strong>创建WBS:</strong> 将项目工作分解为更小的、更易于管理的部分。</li>
+                <li><strong>范围核实:</strong> 与干系人一起正式验收已完成的可交付成果。</li>
+                <li><strong>范围控制:</strong> 监督项目范围状态，管理范围基准的变更，防止<strong>范围蔓延</strong>。</li>
+            </ul>
+
+            <h3 class="text-xl font-medium mt-4">工作分解结构 (WBS)</h3>
+            <p>WBS是对项目团队为实现项目目标、交付所需成果而执行的<strong>全部工作范围</strong>的、面向可交付成果的层级分解。它是整个项目规划的基石，连接了"做什么"（范围）与"做多久"（时间）和"花多少钱"（成本）的桥梁。
+            </p>
+            <p><strong>100%规则:</strong> WBS必须包含项目范围内的100%的工作，不多也不少。WBS的最底层单元被称为 <strong>工作包 (Work
+                    Package)</strong>，它应足够小以便可以被可靠地估算和分配。</p>
+        </div>
+
+        <div id="part2-2" class="content-section mt-8">
+            <h2 class="text-2xl font-semibold">2.2 掌握进度：项目时间管理</h2>
+            <h3 class="text-xl font-medium mt-4">活动排序：四种依赖关系 (PDM)</h3>
+            <p>项目活动之间存在逻辑依赖关系，最常用的紧前关系绘图法 (PDM) 定义了四种：</p>
+            <ul class="list-disc list-inside space-y-2 mt-2">
+                <li><strong>完成到开始 (Finish-to-Start, FS):</strong> 前置活动必须完成后，后续活动才能开始（最常见）。</li>
+                <li><strong>完成到完成 (Finish-to-Finish, FF):</strong> 前置活动必须完成后，后续活动才能完成。</li>
+                <li><strong>开始到开始 (Start-to-Start, SS):</strong> 前置活动必须开始后，后续活动才能开始。</li>
+                <li><strong>开始到完成 (Start-to-Finish, SF):</strong> 前置活动必须开始后，后续活动才能完成（最罕见）。</li>
+            </ul>
+            <h3 class="text-xl font-medium mt-4">三点估算公式 (PERT)</h3>
+            <p>这是考试中的一个关键计算点。它通过综合考虑最乐观时间 ($T_O$)、最可能时间 ($T_M$) 和最悲观时间 ($T_P$) 来得出一个更可靠的期望历时
+                ($T_E$)。其计算公式为：</p>
+            <div class="bg-base-200 p-4 rounded-lg text-center my-4">
+                <p class="text-lg font-mono">$$T_E = \frac{T_O + 4T_M + T_P}{6}$$</p>
+            </div>
+            <h3 class="text-xl font-medium mt-4">关键路径法 (CPM)</h3>
+            <p>这是时间管理中最重要的概念。关键路径是项目网络图中最长的路径，决定了项目的总工期。<strong>关键路径上的任何活动的延迟，都将直接导致整个项目完工日期的延迟</strong>。因此，关键路径上的所有活动的总浮动时间
+                (Float 或 Slack) <strong>为零</strong>。项目经理必须对此进行最严格的监控。</p>
+
+            <!-- CPM Network Diagram -->
+            <div class="bg-base-200 p-4 rounded-lg my-6 shadow-inner">
+                <h4 class="text-center font-semibold mb-4">关键路径法网络图示例</h4>
+                <div class="text-center">
+                    <img src="asserts/imgs/cpm.png" alt="关键路径法网络图示例"
+                        class="mx-auto max-w-full h-auto rounded-lg shadow-md">
+                </div>
+                <!-- CPM Network Analysis -->
+                <div class="collapse collapse-arrow bg-info/10 border border-info/30 mt-6">
+                    <input type="checkbox">
+                    <div class="collapse-title text-info font-bold">
+                        <h5 class="text-lg font-bold">CPM网络图详细解析过程 📊</h5>
+                        <p class="text-sm text-info/80 mt-1">点击展开查看完整的关键路径计算步骤与分析</p>
+                    </div>
+                    <div class="collapse-content">
+                        <div class="pt-4">
+
+                            <div class="space-y-6">
+                                <!-- Network Structure Analysis -->
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h6 class="font-bold mb-3 text-blue-800">1. 网络结构识别</h6>
+                                    <p class="text-sm mb-3">
+                                        该项目网络图包含8个活动（A-H），采用节点表示活动的<strong>活动节点图（AON）</strong>表示法。每个节点包含以下信息：
+                                    </p>
+                                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                        <div class="bg-white p-3 rounded border">
+                                            <p><strong>节点格式：</strong></p>
+                                            <ul class="list-disc list-inside mt-1 space-y-1">
+                                                <li>左上角：ES（最早开始时间）</li>
+                                                <li>右上角：EF（最早完成时间）</li>
+                                                <li>中间：活动名称与持续时间</li>
+                                                <li>左下角：LS（最晚开始时间）</li>
+                                                <li>右下角：LF（最晚完成时间）</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-white p-3 rounded border">
+                                            <p><strong>活动列表：</strong></p>
+                                            <ul class="list-disc list-inside mt-1 space-y-1">
+                                                <li>A：持续时间7天</li>
+                                                <li>B：持续时间3天</li>
+                                                <li>C：持续时间6天</li>
+                                                <li>D：持续时间3天</li>
+                                                <li>E：持续时间3天</li>
+                                                <li>F：持续时间2天</li>
+                                                <li>G：持续时间3天</li>
+                                                <li>H：持续时间2天</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Forward Pass Calculation -->
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <h6 class="font-bold mb-3 text-green-800">2. 正向传递计算（Forward
+                                        Pass）</h6>
+                                    <p class="text-sm mb-3">从项目开始节点向前计算每个活动的ES和EF：</p>
+                                    <div class="overflow-x-auto">
+                                        <table
+                                            class="table table-sm w-full border border-green-200">
+                                            <thead class="bg-green-100">
+                                                <tr>
+                                                    <th class="border border-green-200">活动</th>
+                                                    <th class="border border-green-200">前置活动</th>
+                                                    <th class="border border-green-200">持续时间</th>
+                                                    <th class="border border-green-200">ES计算</th>
+                                                    <th class="border border-green-200">ES</th>
+                                                    <th class="border border-green-200">EF</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-sm">
+                                                <tr>
+                                                    <td class="border border-green-200">A</td>
+                                                    <td class="border border-green-200">-</td>
+                                                    <td class="border border-green-200">7</td>
+                                                    <td class="border border-green-200">项目开始</td>
+                                                    <td class="border border-green-200">1</td>
+                                                    <td class="border border-green-200">8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-green-200">B</td>
+                                                    <td class="border border-green-200">-</td>
+                                                    <td class="border border-green-200">3</td>
+                                                    <td class="border border-green-200">项目开始</td>
+                                                    <td class="border border-green-200">1</td>
+                                                    <td class="border border-green-200">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-green-200">C</td>
+                                                    <td class="border border-green-200">A</td>
+                                                    <td class="border border-green-200">6</td>
+                                                    <td class="border border-green-200">max(A的EF) =
+                                                        8</td>
+                                                    <td class="border border-green-200">8</td>
+                                                    <td class="border border-green-200">14</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-green-200">D</td>
+                                                    <td class="border border-green-200">B</td>
+                                                    <td class="border border-green-200">3</td>
+                                                    <td class="border border-green-200">max(B的EF) =
+                                                        4</td>
+                                                    <td class="border border-green-200">4</td>
+                                                    <td class="border border-green-200">7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-green-200">E</td>
+                                                    <td class="border border-green-200">D</td>
+                                                    <td class="border border-green-200">3</td>
+                                                    <td class="border border-green-200">max(D的EF) =
+                                                        7</td>
+                                                    <td class="border border-green-200">7</td>
+                                                    <td class="border border-green-200">10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-green-200">F</td>
+                                                    <td class="border border-green-200">B</td>
+                                                    <td class="border border-green-200">2</td>
+                                                    <td class="border border-green-200">max(B的EF) =
+                                                        4</td>
+                                                    <td class="border border-green-200">4</td>
+                                                    <td class="border border-green-200">6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-green-200">G</td>
+                                                    <td class="border border-green-200">C</td>
+                                                    <td class="border border-green-200">3</td>
+                                                    <td class="border border-green-200">max(C的EF) =
+                                                        14</td>
+                                                    <td class="border border-green-200">14</td>
+                                                    <td class="border border-green-200">17</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-green-200">H</td>
+                                                    <td class="border border-green-200">E, G</td>
+                                                    <td class="border border-green-200">2</td>
+                                                    <td class="border border-green-200">max(E的EF,
+                                                        G的EF) = max(10,17) = 17</td>
+                                                    <td class="border border-green-200">17</td>
+                                                    <td class="border border-green-200">19</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p class="text-sm mt-3 font-bold text-green-800">项目最早完成时间：19天
+                                    </p>
+                                </div>
+
+                                <!-- Backward Pass Calculation -->
+                                <div class="bg-yellow-50 p-4 rounded-lg">
+                                    <h6 class="font-bold mb-3 text-yellow-800">3. 逆向传递计算（Backward
+                                        Pass）</h6>
+                                    <p class="text-sm mb-3">从项目结束节点向后计算每个活动的LS和LF：</p>
+                                    <div class="overflow-x-auto">
+                                        <table
+                                            class="table table-sm w-full border border-yellow-200">
+                                            <thead class="bg-yellow-100">
+                                                <tr>
+                                                    <th class="border border-yellow-200">活动</th>
+                                                    <th class="border border-yellow-200">后续活动</th>
+                                                    <th class="border border-yellow-200">持续时间</th>
+                                                    <th class="border border-yellow-200">LF计算</th>
+                                                    <th class="border border-yellow-200">LF</th>
+                                                    <th class="border border-yellow-200">LS</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-sm">
+                                                <tr>
+                                                    <td class="border border-yellow-200">H</td>
+                                                    <td class="border border-yellow-200">-</td>
+                                                    <td class="border border-yellow-200">2</td>
+                                                    <td class="border border-yellow-200">项目结束</td>
+                                                    <td class="border border-yellow-200">19</td>
+                                                    <td class="border border-yellow-200">17</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-yellow-200">G</td>
+                                                    <td class="border border-yellow-200">H</td>
+                                                    <td class="border border-yellow-200">3</td>
+                                                    <td class="border border-yellow-200">min(H的LS) =
+                                                        17</td>
+                                                    <td class="border border-yellow-200">17</td>
+                                                    <td class="border border-yellow-200">14</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-yellow-200">E</td>
+                                                    <td class="border border-yellow-200">H</td>
+                                                    <td class="border border-yellow-200">3</td>
+                                                    <td class="border border-yellow-200">min(H的LS) =
+                                                        17</td>
+                                                    <td class="border border-yellow-200">17</td>
+                                                    <td class="border border-yellow-200">14</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-yellow-200">C</td>
+                                                    <td class="border border-yellow-200">G</td>
+                                                    <td class="border border-yellow-200">6</td>
+                                                    <td class="border border-yellow-200">min(G的LS) =
+                                                        14</td>
+                                                    <td class="border border-yellow-200">14</td>
+                                                    <td class="border border-yellow-200">8</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-yellow-200">D</td>
+                                                    <td class="border border-yellow-200">E</td>
+                                                    <td class="border border-yellow-200">3</td>
+                                                    <td class="border border-yellow-200">min(E的LS) =
+                                                        14</td>
+                                                    <td class="border border-yellow-200">14</td>
+                                                    <td class="border border-yellow-200">11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-yellow-200">F</td>
+                                                    <td class="border border-yellow-200">-</td>
+                                                    <td class="border border-yellow-200">2</td>
+                                                    <td class="border border-yellow-200">无后续，可任意时间完成
+                                                    </td>
+                                                    <td class="border border-yellow-200">14</td>
+                                                    <td class="border border-yellow-200">12</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-yellow-200">A</td>
+                                                    <td class="border border-yellow-200">C</td>
+                                                    <td class="border border-yellow-200">7</td>
+                                                    <td class="border border-yellow-200">min(C的LS) =
+                                                        8</td>
+                                                    <td class="border border-yellow-200">8</td>
+                                                    <td class="border border-yellow-200">1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-yellow-200">B</td>
+                                                    <td class="border border-yellow-200">D, F</td>
+                                                    <td class="border border-yellow-200">3</td>
+                                                    <td class="border border-yellow-200">min(D的LS,
+                                                        F的LS) = min(11,12) = 11</td>
+                                                    <td class="border border-yellow-200">11</td>
+                                                    <td class="border border-yellow-200">8</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- Float Calculation -->
+                                <div class="bg-red-50 p-4 rounded-lg">
+                                    <h6 class="font-bold mb-3 text-red-800">4. 浮动时间计算与关键路径识别</h6>
+                                    <div class="overflow-x-auto">
+                                        <table class="table table-sm w-full border border-red-200">
+                                            <thead class="bg-red-100">
+                                                <tr>
+                                                    <th class="border border-red-200">活动</th>
+                                                    <th class="border border-red-200">ES</th>
+                                                    <th class="border border-red-200">EF</th>
+                                                    <th class="border border-red-200">LS</th>
+                                                    <th class="border border-red-200">LF</th>
+                                                    <th class="border border-red-200">TF = LS - ES
+                                                    </th>
+                                                    <th class="border border-red-200">是否关键活动</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-sm">
+                                                <tr class="bg-red-100">
+                                                    <td class="border border-red-200 font-bold">A
+                                                    </td>
+                                                    <td class="border border-red-200">1</td>
+                                                    <td class="border border-red-200">8</td>
+                                                    <td class="border border-red-200">1</td>
+                                                    <td class="border border-red-200">8</td>
+                                                    <td
+                                                        class="border border-red-200 font-bold text-red-600">
+                                                        0</td>
+                                                    <td
+                                                        class="border border-red-200 font-bold text-red-600">
+                                                        是</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-red-200">B</td>
+                                                    <td class="border border-red-200">1</td>
+                                                    <td class="border border-red-200">4</td>
+                                                    <td class="border border-red-200">8</td>
+                                                    <td class="border border-red-200">11</td>
+                                                    <td class="border border-red-200">7</td>
+                                                    <td class="border border-red-200">否</td>
+                                                </tr>
+                                                <tr class="bg-red-100">
+                                                    <td class="border border-red-200 font-bold">C
+                                                    </td>
+                                                    <td class="border border-red-200">8</td>
+                                                    <td class="border border-red-200">14</td>
+                                                    <td class="border border-red-200">8</td>
+                                                    <td class="border border-red-200">14</td>
+                                                    <td
+                                                        class="border border-red-200 font-bold text-red-600">
+                                                        0</td>
+                                                    <td
+                                                        class="border border-red-200 font-bold text-red-600">
+                                                        是</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-red-200">D</td>
+                                                    <td class="border border-red-200">4</td>
+                                                    <td class="border border-red-200">7</td>
+                                                    <td class="border border-red-200">11</td>
+                                                    <td class="border border-red-200">14</td>
+                                                    <td class="border border-red-200">7</td>
+                                                    <td class="border border-red-200">否</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-red-200">E</td>
+                                                    <td class="border border-red-200">7</td>
+                                                    <td class="border border-red-200">10</td>
+                                                    <td class="border border-red-200">14</td>
+                                                    <td class="border border-red-200">17</td>
+                                                    <td class="border border-red-200">7</td>
+                                                    <td class="border border-red-200">否</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="border border-red-200">F</td>
+                                                    <td class="border border-red-200">4</td>
+                                                    <td class="border border-red-200">6</td>
+                                                    <td class="border border-red-200">12</td>
+                                                    <td class="border border-red-200">14</td>
+                                                    <td class="border border-red-200">8</td>
+                                                    <td class="border border-red-200">否</td>
+                                                </tr>
+                                                <tr class="bg-red-100">
+                                                    <td class="border border-red-200 font-bold">G
+                                                    </td>
+                                                    <td class="border border-red-200">14</td>
+                                                    <td class="border border-red-200">17</td>
+                                                    <td class="border border-red-200">14</td>
+                                                    <td class="border border-red-200">17</td>
+                                                    <td
+                                                        class="border border-red-200 font-bold text-red-600">
+                                                        0</td>
+                                                    <td
+                                                        class="border border-red-200 font-bold text-red-600">
+                                                        是</td>
+                                                </tr>
+                                                <tr class="bg-red-100">
+                                                    <td class="border border-red-200 font-bold">H
+                                                    </td>
+                                                    <td class="border border-red-200">17</td>
+                                                    <td class="border border-red-200">19</td>
+                                                    <td class="border border-red-200">17</td>
+                                                    <td class="border border-red-200">19</td>
+                                                    <td
+                                                        class="border border-red-200 font-bold text-red-600">
+                                                        0</td>
+                                                    <td
+                                                        class="border border-red-200 font-bold text-red-600">
+                                                        是</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="mt-4 p-3 bg-red-100 rounded border border-red-300">
+                                        <p class="font-bold text-red-800 mb-2">关键路径识别：</p>
+                                        <p class="text-sm"><strong>关键路径：A → C → G → H</strong></p>
+                                        <p class="text-sm">关键路径长度：7 + 6 + 3 + 2 =
+                                            <strong>18天</strong>
+                                        </p>
+                                        <p class="text-sm text-red-700 mt-2">
+                                            <strong>注意：</strong>图中显示的Cp Path为18天，这是正确的项目工期。
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Management Insights -->
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h6 class="font-bold mb-3 text-purple-800">5. 项目管理要点</h6>
+                                    <div class="grid md:grid-cols-2 gap-4 text-sm">
+                                        <div>
+                                            <p class="font-bold mb-2 text-purple-700">关键活动管理：</p>
+                                            <ul class="list-disc list-inside space-y-1">
+                                                <li>A、C、G、H活动的延误将直接影响项目工期</li>
+                                                <li>需要重点关注这些活动的资源配置</li>
+                                                <li>建议为关键活动制定应急计划</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p class="font-bold mb-2 text-purple-700">非关键活动优化：</p>
+                                            <ul class="list-disc list-inside space-y-1">
+                                                <li>B活动有7天浮动时间，可灵活安排</li>
+                                                <li>D、E活动也有较大浮动空间</li>
+                                                <li>F活动浮动时间最大（8天），优先级较低</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-medium mt-4">CPM核心概念与计算</h3>
+                <p>关键路径法的计算涉及六个重要的时间参数，理解这些概念是掌握CPM的关键：</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="card bg-primary/10 border border-primary/20">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">正向计算（Forward Pass）</h4>
+                            <div class="space-y-3">
+                                <div>
+                                    <strong>❑ 最早开始时间 (Early Start, ES)</strong>
+                                    <p class="text-sm mt-1">活动最早可以开始的时间。从项目开始节点向前计算。</p>
+                                    <p class="text-xs bg-base-200 p-2 rounded mt-2 font-mono">ES =
+                                        max(前置活动的EF)</p>
+                                </div>
+                                <div>
+                                    <strong>❑ 最早完成时间 (Early Finish, EF)</strong>
+                                    <p class="text-sm mt-1">活动最早可以完成的时间。</p>
+                                    <p class="text-xs bg-base-200 p-2 rounded mt-2 font-mono">EF =
+                                        ES + 活动持续时间</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-warning/10 border border-warning/20">
+                        <div class="card-body">
+                            <h4 class="card-title text-warning">逆向计算（Backward Pass）</h4>
+                            <div class="space-y-3">
+                                <div>
+                                    <strong>❑ 最晚完成时间 (Late Finish, LF)</strong>
+                                    <p class="text-sm mt-1">活动最晚必须完成的时间，不会延误项目。从项目结束节点向后计算。</p>
+                                    <p class="text-xs bg-base-200 p-2 rounded mt-2 font-mono">LF =
+                                        min(后续活动的LS)</p>
+                                </div>
+                                <div>
+                                    <strong>❑ 最晚开始时间 (Late Start, LS)</strong>
+                                    <p class="text-sm mt-1">活动最晚可以开始的时间，不会延误项目。</p>
+                                    <p class="text-xs bg-base-200 p-2 rounded mt-2 font-mono">LS =
+                                        LF - 活动持续时间</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <h4 class="text-lg font-semibold mb-4">浮动时间计算</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="card bg-error/10 border border-error/20">
+                            <div class="card-body">
+                                <h5 class="font-bold text-error">❑ 总浮动时间 (Total Float, TF)</h5>
+                                <p class="text-sm mt-2">活动可以延迟而不影响项目完工日期的最大时间。</p>
+                                <div class="bg-base-200 p-3 rounded mt-3">
+                                    <p class="font-mono text-center">TF = LS - ES = LF - EF</p>
+                                </div>
+                                <p class="text-xs mt-2 text-error"><strong>关键活动的总浮动时间 = 0</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card bg-info/10 border border-info/20">
+                            <div class="card-body">
+                                <h5 class="font-bold text-info">❑ 自由浮动时间 (Free Float, FF)</h5>
+                                <p class="text-sm mt-2">活动可以延迟而不影响任何后续活动最早开始时间的时间。</p>
+                                <div class="bg-base-200 p-3 rounded mt-3">
+                                    <p class="font-mono text-center">FF = min(后续活动ES) - EF</p>
+                                </div>
+                                <p class="text-xs mt-2 text-info"><strong>自由浮动 ≤ 总浮动</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-info mt-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="stroke-current shrink-0 w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="font-bold">计算步骤总结：</h3>
+                        <ol class="list-decimal list-inside mt-2 space-y-1">
+                            <li><strong>正向传递：</strong>从开始节点计算所有活动的ES和EF</li>
+                            <li><strong>确定项目工期：</strong>找到项目的最早完成时间</li>
+                            <li><strong>逆向传递：</strong>从结束节点计算所有活动的LS和LF</li>
+                            <li><strong>计算浮动时间：</strong>识别关键路径（TF=0的活动路径）</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-medium mt-4">进度压缩技术</h3>
+                <ul class="list-disc list-inside space-y-2 mt-2">
+                    <li><strong>赶工 (Crashing):</strong>
+                        通过增加资源来缩短关键路径活动工期。这通常会<strong>增加项目成本</strong>。</li>
+                    <li><strong>快速跟进 (Fast Tracking):</strong>
+                        将原本顺序执行的活动改为并行执行。这可以缩短工期，但会<strong>增加项目的风险</strong>。</li>
+                </ul>
+            </div>
+
+            <div id="part2-3" class="content-section mt-8">
+                <h2 class="text-2xl font-semibold">2.3 管理预算：项目成本管理</h2>
+                <h3 class="text-xl font-medium mt-4">成本估算方法</h3>
+                <ul class="list-disc list-inside space-y-2 mt-2">
+                    <li><strong>自下而上估算:</strong> 对WBS中每个工作包进行详细估算后汇总，最准确也最耗时。</li>
+                    <li><strong>类比估算:</strong> 参照过去类似项目的实际成本，快速得出粗略估算。</li>
+                    <li><strong>参数估算:</strong> 利用历史数据和统计关系计算成本，如代码行估算法、COCOMO模型。</li>
+                </ul>
+                <h3 class="text-xl font-medium mt-4">项目预算的构成</h3>
+                <p>理解预算的层级结构至关重要：</p>
+                <ul class="list-decimal list-inside space-y-2 mt-2">
+                    <li>对活动成本进行估算，汇总到<strong>工作包</strong>。</li>
+                    <li>在工作包层面加入用于"已知风险"的<strong>应急储备</strong>，形成<strong>控制账户</strong>。</li>
+                    <li>所有控制账户汇总，形成<strong>成本基准 (Cost Baseline)</strong>。</li>
+                    <li>在成本基准之上，增加用于"未知风险"的<strong>管理储备</strong>。</li>
+                    <li>成本基准 + 管理储备 = <strong>项目总预算</strong>。</li>
+                </ul>
+                <h3 class="text-xl font-medium mt-4">挣值管理 (EVM)</h3>
+                <p>EVM是项目绩效测量的黄金标准，它通过集成项目的范围、进度和成本数据，提供了一个关于项目健康状况的整体视图。其威力不仅在于报告过去，更在于<strong>预测未来</strong>。
+                </p>
+
+                <!-- EVM Terms Table -->
+                <h4 class="text-lg font-semibold mt-6 mb-4">EVM 核心术语与缩写</h4>
+                <div class="overflow-x-auto mb-6">
+                    <table class="table w-full table-zebra border border-base-300">
+                        <thead class="bg-info text-info-content">
+                            <tr>
+                                <th class="border border-base-300 text-center font-bold">缩写</th>
+                                <th class="border border-base-300 text-center font-bold">英文全称</th>
+                                <th class="border border-base-300 text-center font-bold">中文名称</th>
+                                <th class="border border-base-300 text-center font-bold">含义说明</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-primary/5">
+                                <td
+                                    class="border border-base-300 text-center font-bold text-primary">
+                                    PV</td>
+                                <td class="border border-base-300">Planned Value</td>
+                                <td class="border border-base-300">计划价值</td>
+                                <td class="border border-base-300">按计划应该完成的工作的预算价值</td>
+                            </tr>
+                            <tr class="bg-success/5">
+                                <td
+                                    class="border border-base-300 text-center font-bold text-success">
+                                    EV</td>
+                                <td class="border border-base-300">Earned Value</td>
+                                <td class="border border-base-300">挣值/赢得价值</td>
+                                <td class="border border-base-300">实际完成工作的预算价值</td>
+                            </tr>
+                            <tr class="bg-error/5">
+                                <td class="border border-base-300 text-center font-bold text-error">
+                                    AC</td>
+                                <td class="border border-base-300">Actual Cost</td>
+                                <td class="border border-base-300">实际成本</td>
+                                <td class="border border-base-300">完成工作实际发生的成本</td>
+                            </tr>
+                            <tr class="bg-warning/5">
+                                <td
+                                    class="border border-base-300 text-center font-bold text-warning">
+                                    BAC</td>
+                                <td class="border border-base-300">Budget at Completion</td>
+                                <td class="border border-base-300">完工总预算</td>
+                                <td class="border border-base-300">项目完成时的总预算</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-base-300 text-center font-bold">CV</td>
+                                <td class="border border-base-300">Cost Variance</td>
+                                <td class="border border-base-300">成本偏差</td>
+                                <td class="border border-base-300">EV - AC，反映成本执行情况</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-base-300 text-center font-bold">SV</td>
+                                <td class="border border-base-300">Schedule Variance</td>
+                                <td class="border border-base-300">进度偏差</td>
+                                <td class="border border-base-300">EV - PV，反映进度执行情况</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-base-300 text-center font-bold">CPI</td>
+                                <td class="border border-base-300">Cost Performance Index</td>
+                                <td class="border border-base-300">成本绩效指数</td>
+                                <td class="border border-base-300">EV / AC，反映成本效率</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-base-300 text-center font-bold">SPI</td>
+                                <td class="border border-base-300">Schedule Performance Index</td>
+                                <td class="border border-base-300">进度绩效指数</td>
+                                <td class="border border-base-300">EV / PV，反映进度效率</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-base-300 text-center font-bold">EAC</td>
+                                <td class="border border-base-300">Estimate at Completion</td>
+                                <td class="border border-base-300">完工估算</td>
+                                <td class="border border-base-300">预测的项目总成本</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-base-300 text-center font-bold">ETC</td>
+                                <td class="border border-base-300">Estimate to Complete</td>
+                                <td class="border border-base-300">完工尚需估算</td>
+                                <td class="border border-base-300">完成剩余工作所需的估算成本</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-base-300 text-center font-bold">VAC</td>
+                                <td class="border border-base-300">Variance at Completion</td>
+                                <td class="border border-base-300">完工偏差</td>
+                                <td class="border border-base-300">BAC - EAC，预测的总预算偏差</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-base-300 text-center font-bold">TCPI</td>
+                                <td class="border border-base-300">To-Complete Performance Index
+                                </td>
+                                <td class="border border-base-300">完工尚需绩效指数</td>
+                                <td class="border border-base-300">剩余工作需要达到的成本绩效</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="alert alert-info mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="stroke-current shrink-0 w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="font-bold">EVM 核心原理：</h3>
+                        <p class="mt-2">
+                            EVM的核心是<strong>三条曲线</strong>：PV（计划基线）、EV（实际绩效）、AC（实际花费）。通过比较这三条曲线的关系，可以同时了解项目的进度和成本状况，并预测未来趋势。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ECharts container -->
+                <div class="bg-base-200 p-4 rounded-lg my-6 shadow-inner">
+                    <h4 class="text-center font-semibold mb-4">EVM 挣值分析图 (示例)</h4>
+                    <div id="evm-chart" style="width: 100%; height: 400px;"></div>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="table w-full table-zebra">
+                        <thead>
+                            <tr>
+                                <th>指标 (Metric)</th>
+                                <th>公式 (Formula)</th>
+                                <th>解读 (Interpretation)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>成本偏差 (CV)</td>
+                                <td>$EV - AC$</td>
+                                <td>> 0: 成本节约 (Under Budget)<br>&lt; 0: 成本超支 (Over Budget)</td>
+                            </tr>
+                            <tr>
+                                <td>进度偏差 (SV)</td>
+                                <td>$EV - PV$</td>
+                                <td>> 0: 进度超前 (Ahead of Schedule)<br>&lt; 0: 进度落后 (Behind Schedule)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>成本绩效指数 (CPI)</td>
+                                <td>$\frac{EV}{AC}$</td>
+                                <td>> 1: 资金使用效率高<br>&lt; 1: 资金使用效率低（成本超支）</td>
+                            </tr>
+                            <tr>
+                                <td>进度绩效指数 (SPI)</td>
+                                <td>$\frac{EV}{PV}$</td>
+                                <td>> 1: 进度执行效率高<br>&lt; 1: 进度执行效率低（进度落后）</td>
+                            </tr>
+                            <tr>
+                                <td>完工估算 (EAC)</td>
+                                <td>$\frac{BAC}{CPI}$</td>
+                                <td>基于当前绩效预测的项目总成本 (BAC是完工总预算)</td>
+                            </tr>
+                            <tr>
+                                <td>完工尚需绩效指数(TCPI)</td>
+                                <td>$\frac{BAC - EV}{BAC - AC}$</td>
+                                <td>为达成原始预算，剩余工作需达到的CPI</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- EVM Example Problem -->
+                <h4 class="text-lg font-semibold mt-8 mb-4">EVM 综合计算例题</h4>
+                <div
+                    class="card bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary mb-4">例题：软件开发项目EVM分析</h3>
+
+                        <div class="bg-white p-4 rounded-lg border border-blue-100 mb-4">
+                            <h4 class="font-bold mb-3">题目背景：</h4>
+                            <p class="mb-3">某软件开发项目计划为期8周，总预算为100万元。项目执行到第5周末时，项目经理进行了EVM分析，收集到以下数据：
+                            </p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li><strong>BAC（完工总预算）</strong>：100万元</li>
+                                <li><strong>PV（第5周末计划价值）</strong>：80万元</li>
+                                <li><strong>EV（第5周末挣值）</strong>：70万元</li>
+                                <li><strong>AC（第5周末实际成本）</strong>：82万元</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-warning/10 p-4 rounded-lg border border-warning/30 mb-4">
+                            <h4 class="font-bold mb-3 text-warning">请计算以下指标：</h4>
+                            <ol class="list-decimal list-inside space-y-1 ml-4">
+                                <li>成本偏差（CV）和进度偏差（SV）</li>
+                                <li>成本绩效指数（CPI）和进度绩效指数（SPI）</li>
+                                <li>完工估算（EAC）</li>
+                                <li>完工尚需绩效指数（TCPI）</li>
+                                <li>分析项目当前状态，并给出管理建议</li>
+                            </ol>
+                        </div>
+
+                        <div class="collapse collapse-arrow bg-success/10 border border-success/30">
+                            <input type="checkbox">
+                            <div class="collapse-title text-success font-bold">
+                                点击查看详细解答过程 📝
+                            </div>
+                            <div class="collapse-content">
+                                <div class="space-y-4 pt-4">
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <h5 class="font-bold mb-2 text-primary">1. 偏差计算：</h5>
+                                        <div class="grid md:grid-cols-2 gap-4">
+                                            <div>
+                                                <p><strong>成本偏差 (CV)</strong></p>
+                                                <p>CV = EV - AC = 70 - 82 = <span
+                                                        class="text-error font-bold">-12万元</span>
+                                                </p>
+                                                <p class="text-sm text-error">负值表示成本超支</p>
+                                            </div>
+                                            <div>
+                                                <p><strong>进度偏差 (SV)</strong></p>
+                                                <p>SV = EV - PV = 70 - 80 = <span
+                                                        class="text-error font-bold">-10万元</span>
+                                                </p>
+                                                <p class="text-sm text-error">负值表示进度落后</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <h5 class="font-bold mb-2 text-primary">2. 绩效指数计算：</h5>
+                                        <div class="grid md:grid-cols-2 gap-4">
+                                            <div>
+                                                <p><strong>成本绩效指数 (CPI)</strong></p>
+                                                <p>CPI = $\frac{EV}{AC} = \frac{70}{82} =$ <span
+                                                        class="text-error font-bold">0.85</span></p>
+                                                <p class="text-sm text-error">小于1，成本效率低</p>
+                                            </div>
+                                            <div>
+                                                <p><strong>进度绩效指数 (SPI)</strong></p>
+                                                <p>SPI = $\frac{EV}{PV} = \frac{70}{80} =$ <span
+                                                        class="text-error font-bold">0.875</span>
+                                                </p>
+                                                <p class="text-sm text-error">小于1，进度效率低</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <h5 class="font-bold mb-2 text-primary">3. 完工估算：</h5>
+                                        <p><strong>完工估算 (EAC)</strong></p>
+                                        <p>EAC = $\frac{BAC}{CPI} = \frac{100}{0.85} =$ <span
+                                                class="text-warning font-bold">117.65万元</span></p>
+                                        <p class="text-sm text-warning">预计项目总成本将超出原预算17.65万元</p>
+                                    </div>
+
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <h5 class="font-bold mb-2 text-primary">4. 完工尚需绩效指数：</h5>
+                                        <p><strong>完工尚需绩效指数 (TCPI)</strong></p>
+                                        <p>TCPI = $\frac{BAC - EV}{BAC - AC} = \frac{100 - 70}{100 -
+                                            82} = \frac{30}{18} =$ <span
+                                                class="text-info font-bold">1.67</span></p>
+                                        <p class="text-sm text-info">要按原预算完成，剩余工作的成本绩效需达到1.67</p>
+                                    </div>
+
+                                    <div class="bg-white p-4 rounded-lg">
+                                        <h5 class="font-bold mb-2 text-primary">5. 项目状态分析与管理建议：</h5>
+                                        <div class="space-y-3">
+                                            <div class="alert alert-error">
+                                                <h6 class="font-bold">项目现状：</h6>
+                                                <ul class="list-disc list-inside mt-2 space-y-1">
+                                                    <li>项目同时存在成本超支和进度落后问题</li>
+                                                    <li>已完成工作的成本效率仅为85%，进度效率为87.5%</li>
+                                                    <li>按当前绩效趋势，项目将超支17.65万元</li>
+                                                </ul>
+                                            </div>
+                                            <div class="alert alert-warning">
+                                                <h6 class="font-bold">管理建议：</h6>
+                                                <ul class="list-disc list-inside mt-2 space-y-1">
+                                                    <li><strong>立即启动纠正措施：</strong>分析成本超支和进度落后的根本原因
+                                                    </li>
+                                                    <li><strong>资源优化：</strong>考虑对关键路径活动进行"赶工"或"快速跟进"
+                                                    </li>
+                                                    <li><strong>成本控制：</strong>剩余工作需要将CPI提升至1.67才能按原预算完成
+                                                    </li>
+                                                    <li><strong>干系人沟通：</strong>及时向管理层汇报项目风险，可能需要申请预算变更
+                                                    </li>
+                                                    <li><strong>加强监控：</strong>缩短EVM报告周期，密切跟踪纠正措施效果
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TCPI Cost Control Section -->
+                <h4 class="text-lg font-semibold mt-8 mb-4">成本控制方法：完工尚需绩效指数（TCPI）</h4>
+                <div class="mt-6">
+                    <h3 class="text-xl font-medium mb-4">TCPI 成本控制原理与应用</h3>
+
+                    <div class="mb-6">
+                        <p class="mb-3">TCPI（To-Complete Performance
+                            Index）是EVM中最重要的前瞻性指标，它告诉项目经理：<strong>为了达成特定的完工目标，剩余工作需要达到什么样的成本绩效水平</strong>。
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-4 mt-4">
+                            <div class="bg-primary/10 p-3 rounded">
+                                <h5 class="font-bold text-primary mb-2">TCPI(BAC) - 按原预算完成</h5>
+                                <p class="font-mono text-sm">TCPI =
+                                    $\frac{剩余工资(BAC-EV)}{剩余资金(BAC-AC)}$</p>
+                            </div>
+                            <div class="bg-warning/10 p-3 rounded">
+                                <h5 class="font-bold text-warning mb-2">TCPI(EAC) - 按新估算完成</h5>
+                                <p class="font-mono text-sm">TCPI =
+                                    $\frac{剩余工资(BAC-EV)}{剩余资金(EAC-AC)}$</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TCPI Chart Placeholder for Image -->
+                    <div class="bg-base-200 p-4 rounded-lg my-6 shadow-inner">
+                        <h4 class="text-center font-semibold mb-4">TCPI 成本控制决策图</h4>
+                        <div class="text-center">
+                            <img src="asserts/imgs/tcpi.png" alt="TCPI"
+                                class="mx-auto max-w-full h-auto rounded-lg shadow-md">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-4 mt-6">
+                        <div class="card bg-success/10 border border-success/20">
+                            <div class="card-body text-center p-4">
+                                <h5 class="font-bold text-success mb-2">TCPI ≤ 1.0</h5>
+                                <p class="text-sm">项目仍有成本缓冲，可按原预算完成</p>
+                                <p class="text-xs text-success mt-2">✓ 控制良好</p>
+                            </div>
+                        </div>
+                        <div class="card bg-warning/10 border border-warning/20">
+                            <div class="card-body text-center p-4">
+                                <h5 class="font-bold text-warning mb-2">1.0 < TCPI ≤ 1.2</h5>
+                                        <p class="text-sm">需要提高效率，但仍可实现</p>
+                                        <p class="text-xs text-warning mt-2">⚠ 需要关注</p>
+                            </div>
+                        </div>
+                        <div class="card bg-error/10 border border-error/20">
+                            <div class="card-body text-center p-4">
+                                <h5 class="font-bold text-error mb-2">TCPI > 1.2</h5>
+                                <p class="text-sm">极难实现，需要重新规划</p>
+                                <p class="text-xs text-error mt-2">✗ 高风险</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info mt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            class="stroke-current shrink-0 w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold">TCPI 实战应用策略：</h3>
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-sm">
+                                <li><strong>定期计算：</strong>在每个项目检查点计算TCPI，评估完工目标的可实现性</li>
+                                <li><strong>趋势分析：</strong>跟踪TCPI的变化趋势，及早发现成本控制风险</li>
+                                <li><strong>决策支持：</strong>当TCPI超过1.2时，考虑调整项目范围或申请额外预算</li>
+                                <li><strong>团队沟通：</strong>向团队明确TCPI目标，确保所有人理解成本控制要求</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

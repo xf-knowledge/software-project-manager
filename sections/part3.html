@@ -1,0 +1,291 @@
+<!-- Section 3 Block -->
+<div id="part3" class="content-section bg-base-100 p-6 md:p-8 rounded-2xl shadow-xl">
+    <div class="prose max-w-none">
+        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">第三部分：人员与过程职能</h1>
+        <p>本部分涵盖了项目管理中"软"但同等关键的方面。一个完美的计划，如果没有一个功能健全的团队、高质量的过程和清晰的沟通渠道，终将是一纸空文。</p>
+
+        <div id="part3-1" class="content-section mt-8">
+            <h2 class="text-2xl font-semibold">3.1 确保卓越：项目质量管理</h2>
+            <h3 class="text-xl font-medium mt-4">核心原则：质量是规划出来的</h3>
+            <p>质量是<strong>规划和构建</strong>出来的，而不是在项目结束时<strong>检查</strong>出来的。这意味着质量活动必须贯穿项目的整个生命周期。其核心是理解<strong>质量成本(Cost
+                    of Quality)</strong>，即增加预防成本（培训、评审）和评估成本（测试），可以大大降低失败成本（返工、修复），从而降低总成本。</p>
+            <h3 class="text-xl font-medium mt-4">质量保证 (QA) vs. 质量控制 (QC)</h3>
+            <div class="grid md:grid-cols-2 gap-4 mt-4">
+                <div class="card bg-base-200 shadow-md">
+                    <div class="card-body">
+                        <h4 class="card-title">质量保证 (QA)</h4>
+                        <p><strong>面向过程。</strong>
+                            通过审计和评估项目遵循的<strong>过程</strong>是否正确有效，来建立对最终产品质量的信心。回答："我们是否在
+                            <strong>用正确的方法</strong> 做事？"
+                        </p>
+                    </div>
+                </div>
+                <div class="card bg-base-200 shadow-md">
+                    <div class="card-body">
+                        <h4 class="card-title">质量控制 (QC)</h4>
+                        <p><strong>面向产品。</strong>
+                            通过检查和测试具体的<strong>产出</strong>，来识别和纠正缺陷。回答："我们做出的 <strong>结果</strong>
+                            是否正确？"</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-medium mt-4">软件质量特性框架</h3>
+            <p>软件质量是一个多维度的概念，不仅仅局限于"没有缺陷"。现代软件质量管理需要从产品的整个生命周期角度来考虑质量特性，包括开发、维护、转移和运行等各个阶段的质量要求。
+            </p>
+
+            <!-- Software Quality Characteristics Image -->
+            <div class="bg-base-200 p-4 rounded-lg my-6 shadow-inner">
+                <h4 class="text-center font-semibold mb-4">软件质量特性三维模型</h4>
+                <div class="text-center">
+                    <img src="asserts/imgs/software-quality.png" alt="软件质量特性三维模型"
+                        class="mx-auto max-w-full h-auto rounded-lg shadow-md">
+                </div>
+                <div class="mt-4 text-sm text-gray-600">
+                    <p class="text-center">
+                        该模型展示了软件质量的三个核心维度：产品修改（可理解性、可维修性、灵活性、可测试性）、产品转移（可移植性、可重用性、互运行性）和产品运行（正确性、健壮性、效率、完整性、可用性、安全性）。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="part3-2" class="content-section mt-8">
+            <h2 class="text-2xl font-semibold">3.2 领导团队：项目人力资源管理</h2>
+
+            <h3 class="text-xl font-medium mt-4">人力资源管理计划：角色和职责（RACI矩阵）</h3>
+            <p>RACI矩阵是人力资源管理计划中的核心工具，用于明确项目活动中每个团队成员的角色和职责。它确保每项工作都有明确的负责人，避免职责不清或重复工作。</p>
+
+            <!-- RACI Matrix Table -->
+            <div class="overflow-x-auto mt-6">
+                <table class="table w-full table-zebra border border-base-300">
+                    <thead class="bg-primary/80 text-primary-content">
+                        <tr>
+                            <th class="border border-base-300 text-center font-bold" rowspan="2">活动
+                            </th>
+                            <th class="border border-base-300 text-center font-bold" colspan="5">人员
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="border border-base-300 text-center font-bold">安娅</th>
+                            <th class="border border-base-300 text-center font-bold">本</th>
+                            <th class="border border-base-300 text-center font-bold">卡洛斯</th>
+                            <th class="border border-base-300 text-center font-bold">蒂娜</th>
+                            <th class="border border-base-300 text-center font-bold">埃德</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td
+                                class="border border-base-300 font-semibold bg-primary/80 text-primary-content text-center">
+                                制定章程</td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-error font-bold">A</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-success font-bold">R</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-info font-bold">I</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-info font-bold">I</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-info font-bold">I</span></td>
+                        </tr>
+                        <tr>
+                            <td
+                                class="border border-base-300 font-semibold bg-primary/80 text-primary-content text-center">
+                                收集需求</td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-info font-bold">I</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-error font-bold">A</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-success font-bold">R</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-warning font-bold">C</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-warning font-bold">C</span></td>
+                        </tr>
+                        <tr>
+                            <td
+                                class="border border-base-300 font-semibold bg-primary/80 text-primary-content text-center">
+                                提交变更请求</td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-info font-bold">I</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-error font-bold">A</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-success font-bold">R</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-success font-bold">R</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-warning font-bold">C</span></td>
+                        </tr>
+                        <tr>
+                            <td
+                                class="border border-base-300 font-semibold bg-primary/80 text-primary-content text-center">
+                                制定测试计划</td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-error font-bold">A</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-warning font-bold">C</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-info font-bold">I</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-info font-bold">I</span></td>
+                            <td class="border border-base-300 text-center"><span
+                                    class="badge badge-success font-bold">R</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- RACI Legend -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                <div class="card bg-error/10 border border-error/20">
+                    <div class="card-body p-4 text-center">
+                        <span class="badge badge-error font-bold mb-2">R</span>
+                        <h4 class="font-bold text-error">执行 (Responsible)</h4>
+                        <p class="text-sm">负责完成任务的人员</p>
+                    </div>
+                </div>
+                <div class="card bg-success/10 border border-success/20">
+                    <div class="card-body p-4 text-center">
+                        <span class="badge badge-success font-bold mb-2">A</span>
+                        <h4 class="font-bold text-success">负责 (Accountable)</h4>
+                        <p class="text-sm">对任务结果承担最终责任</p>
+                    </div>
+                </div>
+                <div class="card bg-warning/10 border border-warning/20">
+                    <div class="card-body p-4 text-center">
+                        <span class="badge badge-warning font-bold mb-2">C</span>
+                        <h4 class="font-bold text-warning">咨询 (Consulted)</h4>
+                        <p class="text-sm">需要征求意见的相关方</p>
+                    </div>
+                </div>
+                <div class="card bg-info/10 border border-info/20">
+                    <div class="card-body p-4 text-center">
+                        <span class="badge badge-info font-bold mb-2">I</span>
+                        <h4 class="font-bold text-info">知情 (Informed)</h4>
+                        <p class="text-sm">需要了解进展的相关方</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-warning mt-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6"
+                    fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                <div>
+                    <h3 class="font-bold">RACI矩阵使用原则：</h3>
+                    <ul class="list-disc list-inside mt-2 space-y-1">
+                        <li>每个活动必须有且只有一个A（负责人）</li>
+                        <li>每个活动至少要有一个R（执行人）</li>
+                        <li>避免过多的C和I，保持矩阵简洁</li>
+                        <li>确保所有关键干系人都被包含在内</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-medium mt-8">组织结构（考试重点）</h3>
+            <p>项目的组织结构决定了项目经理的权力和团队的运作方式。主要有三种类型：</p>
+            <div class="overflow-x-auto mt-4">
+                <table class="table w-full table-zebra">
+                    <thead>
+                        <tr>
+                            <th>特征</th>
+                            <th>职能型 (Functional)</th>
+                            <th>矩阵型 (Matrix)</th>
+                            <th>项目型 (Projectized)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>项目经理权力</strong></td>
+                            <td>几乎没有</td>
+                            <td>有限到均衡</td>
+                            <td>高到几乎全部</td>
+                        </tr>
+                        <tr>
+                            <td><strong>资源可用性</strong></td>
+                            <td>低</td>
+                            <td>中到高</td>
+                            <td>高到几乎全部</td>
+                        </tr>
+                        <tr>
+                            <td><strong>优点</strong></td>
+                            <td>专业技能集中</td>
+                            <td>资源共享灵活</td>
+                            <td>目标单一，决策快</td>
+                        </tr>
+                        <tr>
+                            <td><strong>缺点</strong></td>
+                            <td>跨部门协调困难</td>
+                            <td>双重领导，易冲突</td>
+                            <td>资源冗余，成员无归属感</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="text-xl font-medium mt-6">团队发展：塔克曼阶梯理论</h3>
+            <p>描述了团队成长的五个阶段，项目经理必须根据团队所处的阶段调整自己的领导风格：</p>
+
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 text-center mt-6">
+                <!-- Stage 1: Forming -->
+                <div class="card bg-base-200 shadow-md p-4">
+                    <div class="font-bold text-lg text-primary">形成 (Forming)</div>
+                    <div class="text-sm text-base-content/80 mt-2">领导风格</div>
+                    <div class="font-semibold">指导型</div>
+                </div>
+                <!-- Stage 2: Storming -->
+                <div class="card bg-base-200 shadow-md p-4">
+                    <div class="font-bold text-lg text-primary">震荡 (Storming)</div>
+                    <div class="text-sm text-base-content/80 mt-2">领导风格</div>
+                    <div class="font-semibold">教练型</div>
+                </div>
+                <!-- Stage 3: Norming -->
+                <div class="card bg-base-200 shadow-md p-4">
+                    <div class="font-bold text-lg text-primary">规范 (Norming)</div>
+                    <div class="text-sm text-base-content/80 mt-2">领导风格</div>
+                    <div class="font-semibold">支持型</div>
+                </div>
+                <!-- Stage 4: Performing -->
+                <div class="card bg-base-200 shadow-md p-4">
+                    <div class="font-bold text-lg text-primary">成熟 (Performing)</div>
+                    <div class="text-sm text-base-content/80 mt-2">领导风格</div>
+                    <div class="font-semibold">授权型</div>
+                </div>
+                <!-- Stage 5: Adjourning -->
+                <div class="card bg-base-200 shadow-md p-4">
+                    <div class="font-bold text-lg text-primary">解散 (Adjourning)</div>
+                    <div class="text-sm text-base-content/80 mt-2">领导风格</div>
+                    <div class="font-semibold">收尾</div>
+                </div>
+            </div>
+
+            <h3 class="text-xl font-medium mt-6">激励理论（考试重点）</h3>
+            <p>核心在于理解如何激励<strong>知识型员工</strong>。重点掌握 <strong>赫茨伯格双因素理论</strong>：</p>
+            <ul class="list-disc list-inside space-y-2">
+                <li><strong>保健因素:</strong> 缺乏时会导致不满，但满足后并不能带来激励。例如：薪水、工作环境、公司政策。它们是基础，必须满足。</li>
+                <li><strong>激励因素:</strong> 能够真正激发员工热情和满意度的因素。例如：工作本身的挑战性、获得的认可、责任感、晋升和成长机会。</li>
+            </ul>
+        </div>
+
+        <div id="part3-3" class="content-section mt-8">
+            <h2 class="text-2xl font-semibold">3.3 弥合差距：项目沟通与干系人管理</h2>
+            <h3 class="text-xl font-medium mt-4">干系人管理：权力/利益方格</h3>
+            <p>这是识别和分类关键干系人，并制定相应管理策略的核心工具。</p>
+            <!-- ECharts container for stakeholder grid -->
+            <div class="bg-base-200 p-4 rounded-lg my-6 shadow-inner">
+                <div id="stakeholder-chart" style="width: 100%; height: 450px;"></div>
+            </div>
+            <h3 class="text-xl font-medium mt-4">沟通渠道公式</h3>
+            <p>沟通渠道的数量可以通过公式 <strong>$N(N-1)/2$</strong> 计算，其中N是团队成员数量。这解释了为何小团队沟通效率更高。</p>
+            <h3 class="text-xl font-medium mt-4">冲突解决方法</h3>
+            <p>冲突在项目中不可避免。项目经理的目标不是消除冲突，而是有效管理冲突。理想的双赢 (Win-Win) 策略是 <strong>合作/解决问题
+                    (Collaborate/Problem Solve)</strong>，它综合各方观点，寻求共识。而强迫、回避等都是效果较差的策略。</p>
+        </div>
+    </div>
+</div>
