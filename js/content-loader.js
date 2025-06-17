@@ -193,17 +193,6 @@ class ContentLoader {
             case 'part6-4':
                 // 案例分析页面不需要特殊图表
                 break;
-            case 'part6-5':
-                if (typeof initializeExamStatsChart === 'function') {
-                    setTimeout(initializeExamStatsChart, 100);
-                }
-                if (typeof initializeKnowledgeChart === 'function') {
-                    setTimeout(initializeKnowledgeChart, 200);
-                }
-                if (typeof initializeDifficultyChart === 'function') {
-                    setTimeout(initializeDifficultyChart, 300);
-                }
-                break;
         }
     }
 
