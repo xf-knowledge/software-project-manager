@@ -182,8 +182,8 @@ class ContentLoader {
                 }
                 break;
             case 'part6-1':
-                if (typeof initializeQuestionListeners === 'function') {
-                    setTimeout(initializeQuestionListeners, 100);
+                if (typeof initializePart6 === 'function') {
+                    setTimeout(initializePart6, 100);
                 }
                 break;
             case 'part6-2':

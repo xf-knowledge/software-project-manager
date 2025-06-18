@@ -415,23 +415,55 @@ document.addEventListener('DOMContentLoaded', function() {
     updateStats();
 });
 
-// 初始化选择题事件监听器（用于动态加载的内容）
-function initializeQuestionListeners() {
-    document.querySelectorAll('input[type="radio"]').forEach(input => {
-        // 移除已有的监听器，避免重复绑定
-        input.removeEventListener('change', handleRadioChange);
-        input.addEventListener('change', handleRadioChange);
-    });
+// 初始化Part6选择题事件监听器（用于动态加载的内容）
+function initializePart6QuestionListeners() {
+    console.log('开始初始化 Part6 选择题监听器...');
+    
+    // 等待一段时间确保DOM完全加载
+    setTimeout(() => {
+        const part6Radios = document.querySelectorAll('input[name^="q"]');
+        console.log(`找到 ${part6Radios.length} 个Part6选择题选项`);
+        
+        part6Radios.forEach(input => {
+            // 移除已有的监听器，避免重复绑定
+            input.removeEventListener('change', handlePart6RadioChange);
+            input.addEventListener('change', handlePart6RadioChange);
+        });
+        
+        // 加载之前保存的答案
+        loadAnswers();
+        
+        // 初始化统计数据
+        updateStats();
+        
+        console.log('Part6 选择题监听器初始化完成');
+    }, 100);
 }
 
-function handleRadioChange() {
+function handlePart6RadioChange() {
     checkAnswer(this.name);
+}
+
+// Part6专用的初始化函数
+function initializePart6() {
+    console.log('开始初始化 Part6 期末模拟试卷页面...');
+    initializePart6QuestionListeners();
+}
+
+// 保持向后兼容性的函数名（但只用于Part6）
+function initializeQuestionListeners() {
+    // 只有当前页面是Part6相关时才执行
+    if (document.querySelector('input[name^="q"]')) {
+        initializePart6QuestionListeners();
+    }
 }
 
 // 导出函数供全局使用
 window.showAnswer = showAnswer;
 window.checkAnswer = checkAnswer;
 window.initializeQuestionListeners = initializeQuestionListeners;
+window.initializePart6QuestionListeners = initializePart6QuestionListeners;
+window.initializePart6 = initializePart6;
 window.startTimer = startTimer;
 window.stopTimer = stopTimer;
 window.resetTimer = resetTimer;

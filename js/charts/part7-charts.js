@@ -103,7 +103,7 @@ const midtermCorrectAnswers = {
 };
 
 // 检查期中考试选择题答案并显示反馈（参考part6样式）
-function checkAnswer(questionId) {
+function checkMidtermAnswer(questionId) {
     console.log(`检查答案：${questionId}`);
     
     const selectedInput = document.querySelector(`input[name="${questionId}"]:checked`);
@@ -335,7 +335,7 @@ function initializeQuestionListeners() {
 }
 
 function handleMidtermRadioChange() {
-    checkAnswer(this.name);
+    checkMidtermAnswer(this.name);
 }
 
 // Part7专用的初始化函数
@@ -365,7 +365,7 @@ function initializePart7() {
 
 // 导出函数供全局使用
 window.showAnswerExplanation = showAnswerExplanation;
-window.checkMidtermAnswer = checkAnswer;
+window.checkMidtermAnswer = checkMidtermAnswer;
 window.initializeQuestionListeners = initializeQuestionListeners;
 window.initializePart7 = initializePart7;
 window.startTimer = startTimer;
