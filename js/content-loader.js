@@ -195,6 +195,11 @@ class ContentLoader {
             case 'part6-4':
                 // 案例分析页面不需要特殊图表
                 break;
+            case 'part7':
+                if (typeof initializeQuestionListeners === 'function') {
+                    setTimeout(initializeQuestionListeners, 100);
+                }
+                break;
         }
     }
 
