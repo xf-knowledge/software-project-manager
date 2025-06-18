@@ -1,80 +1,840 @@
 <!-- Section 6-4 Block -->
 <div id="part6-4" class="content-section bg-base-100 p-6 md:p-8 rounded-2xl shadow-xl">
     <div class="prose max-w-none">
-        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">6.4 案例分析题</h1>
-        <p>本部分提供真实的项目案例分析，考查你运用项目管理知识解决实际问题的能力。</p>
+        <h1 class="text-3xl font-bold border-b-2 border-primary pb-2 mb-6">6.4 案例分析题专项训练</h1>
+        <p>本部分提供真实的项目管理案例分析，考查你运用项目管理知识解决实际问题的能力。每个案例都涵盖了不同的项目管理知识领域和实际挑战。</p>
 
-        <!-- 案例背景 -->
-        <div class="card bg-gradient-to-r from-violet-50 to-purple-50 shadow-lg mb-8">
-            <div class="card-body">
-                <h3 class="card-title text-xl text-violet-700 mb-4">智慧校园APP开发项目案例</h3>
-                
-                <div class="bg-white p-4 rounded-lg border-2 border-violet-200">
-                    <h4 class="font-bold text-lg mb-3">项目背景</h4>
-                    <p class="mb-4">某大学计划开发一个智慧校园APP，以提升师生的校园生活体验。</p>
+        <div class="space-y-8">
+            <!-- 案例一：创业公司的困境 -->
+            <div class="card bg-gradient-to-r from-violet-50 to-purple-50 shadow-lg">
+                <div class="card-body">
+                    <h3 class="card-title text-xl text-violet-700 mb-4">🚀 案例一：创业公司的困境</h3>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div class="bg-blue-50 p-3 rounded">
-                            <h5 class="font-semibold text-blue-700 mb-2">项目基本信息</h5>
+                    <div class="bg-white p-4 rounded-lg border-2 border-violet-200 mb-4">
+                        <h4 class="font-bold text-lg mb-3">项目背景</h4>
+                        <p class="mb-4">你被一家初创公司聘为项目经理，负责开发一款名为"智健生活"的健康管理App。</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-blue-50 p-3 rounded">
+                                <h5 class="font-semibold text-blue-700 mb-2">项目基本信息</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li><strong>项目周期：</strong>4个月</li>
+                                    <li><strong>团队规模：</strong>5名年轻开发者</li>
+                                    <li><strong>CEO承诺：</strong>包含四大核心功能</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded">
+                                <h5 class="font-semibold text-green-700 mb-2">核心功能模块</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>AI饮食推荐</li>
+                                    <li>智能运动计划</li>
+                                    <li>睡眠质量监测</li>
+                                    <li>线上社群</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="bg-red-50 p-3 rounded mb-4">
+                            <h5 class="font-semibold text-red-700 mb-2">项目启动两周后发现的问题</h5>
                             <ul class="text-sm space-y-1">
-                                <li><strong>项目周期：</strong>6个月</li>
-                                <li><strong>总预算：</strong>80万元</li>
-                                <li><strong>团队规模：</strong>15人</li>
-                                <li><strong>项目经理：</strong>李华（信息中心）</li>
+                                <li>CEO每周提出新的"绝妙点子"要求加入第一版</li>
+                                <li>开发团队在AI算法技术实现路径上存在分歧</li>
+                                <li>市场部和开发部沟通不畅，互相抱怨</li>
                             </ul>
                         </div>
-                        <div class="bg-green-50 p-3 rounded">
-                            <h5 class="font-semibold text-green-700 mb-2">主要功能模块</h5>
-                            <ul class="text-sm space-y-1">
-                                <li>用户认证与权限管理</li>
-                                <li>课程查询与选课系统</li>
-                                <li>校园卡充值与消费查询</li>
-                                <li>图书馆座位预约</li>
-                            </ul>
+
+                        <div class="space-y-2">
+                            <p><strong>问题：</strong></p>
+                            <ol class="list-decimal ml-6 space-y-1">
+                                <li><strong>识别问题 (3分)：</strong>从项目管理角度，识别出该项目当前面临的至少三个主要问题或风险</li>
+                                <li><strong>映射知识领域与诊断原因 (5分)：</strong>这些问题分别属于项目管理的哪些知识领域？并简要分析导致这些问题的根本原因</li>
+                                <li><strong>提出解决方案 (7分)：</strong>作为项目经理，你将采取哪些具体的行动或使用哪些工具来应对这些问题？</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('case1-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            查看参考答案
+                        </button>
+                        <div id="case1-answer" class="alert alert-success mt-3 hidden border-l-4 border-green-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div class="w-full">
+                                    <h4 class="font-bold text-lg mb-3">参考答案解析</h4>
+                                    
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">1. 识别问题（3分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-red-50 p-3 rounded border-l-4 border-red-400">
+                                                    <p><strong>问题一：范围管理失控</strong></p>
+                                                    <p class="mt-1">• <strong>范围蔓延：</strong>CEO每周提出新功能要求（如智能手环集成、营养师咨询），严重偏离原定四大核心功能</p>
+                                                    <p>• <strong>镀金风险：</strong>开发团队在AI算法上存在"自研vs第三方API"分歧，可能选择过度复杂方案</p>
+                                                    <p>• <strong>项目边界模糊：</strong>缺乏明确的"做什么"和"不做什么"的界限</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：范围蔓延是初创公司项目的典型问题，CEO的创新热情往往成为项目管理的最大挑战</em></p>
+                                                </div>
+                                                <div class="bg-orange-50 p-3 rounded border-l-4 border-orange-400">
+                                                    <p><strong>问题二：干系人管理与沟通不畅</strong></p>
+                                                    <p class="mt-1">• <strong>关键干系人失控：</strong>CEO作为高权力、高利益干系人，其期望未得到有效管理</p>
+                                                    <p>• <strong>跨部门冲突：</strong>市场部认为开发太慢，开发部抱怨需求多变，缺乏有效沟通机制</p>
+                                                    <p>• <strong>信息不对称：</strong>各部门对项目目标和优先级理解不一致</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：在小团队中，非正式沟通往往占主导，但当冲突出现时就需要建立正式的沟通机制</em></p>
+                                                </div>
+                                                <div class="bg-yellow-50 p-3 rounded border-l-4 border-yellow-400">
+                                                    <p><strong>问题三：时间与风险管理缺失</strong></p>
+                                                    <p class="mt-1">• <strong>不切实际的时间约束：</strong>4个月内完成复杂App开发，对5名缺乏经验的开发者是巨大挑战</p>
+                                                    <p>• <strong>技术风险未识别：</strong>AI算法选型分歧是重大技术风险，但未进行正式评估</p>
+                                                    <p>• <strong>人力资源风险：</strong>团队经验不足，处于塔克曼阶梯的形成期或震荡期</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：创业公司常见的"拍脑袋"定时间，忽视了风险评估和团队能力分析</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">2. 映射知识领域与诊断原因（5分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-blue-50 p-3 rounded border-l-4 border-blue-400">
+                                                    <p><strong>项目范围管理（PMBOK第5章）</strong></p>
+                                                    <p class="mt-1"><strong>涉及过程：</strong>规划范围管理、收集需求、定义范围、控制范围</p>
+                                                    <p><strong>根本原因：</strong></p>
+                                                    <p>• 项目启动时缺乏正式的项目范围说明书和WBS</p>
+                                                    <p>• 未建立整体变更控制流程来应对CEO的持续需求变更</p>
+                                                    <p>• 需求收集过程不充分，未能在项目开始时就明确所有关键需求</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：范围管理是项目成功的基础，特别是在资源有限的创业环境中更为关键</em></p>
+                                                </div>
+                                                <div class="bg-green-50 p-3 rounded border-l-4 border-green-400">
+                                                    <p><strong>项目干系人管理（PMBOK第13章）+ 沟通管理（第10章）</strong></p>
+                                                    <p class="mt-1"><strong>涉及过程：</strong>识别干系人、规划干系人参与、管理干系人参与</p>
+                                                    <p><strong>根本原因：</strong></p>
+                                                    <p>• 未能使用权力/利益方格正确分析CEO的干系人特征</p>
+                                                    <p>• 缺乏针对高权力干系人的专门管理策略</p>
+                                                    <p>• 未制定正式的沟通管理计划，依赖临时性、非正式沟通</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：CEO既是项目发起人又是产品负责人，双重身份使其管理更加复杂</em></p>
+                                                </div>
+                                                <div class="bg-purple-50 p-3 rounded border-l-4 border-purple-400">
+                                                    <p><strong>项目风险管理（PMBOK第11章）+ 时间管理（第6章）</strong></p>
+                                                    <p class="mt-1"><strong>涉及过程：</strong>识别风险、实施定性风险分析、估算活动持续时间</p>
+                                                    <p><strong>根本原因：</strong></p>
+                                                    <p>• 规划阶段未进行充分的风险识别和登记册建立</p>
+                                                    <p>• 技术选型风险未进行正式的定性和定量分析</p>
+                                                    <p>• 时间估算方法不当，未采用三点估算法考虑不确定性</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：年轻团队往往过于乐观，低估技术难度和学习曲线</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">3. 解决方案（7分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-cyan-50 p-3 rounded border-l-4 border-cyan-400">
+                                                    <p><strong>立即进行范围界定与控制</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>召开范围定义工作坊：</strong>组织CEO、市场部、开发团队，使用原型法快速梳理核心功能</p>
+                                                    <p>• <strong>定义MVP（最小可行产品）：</strong>说服CEO将"智能手环集成"等功能放入v2.0版本</p>
+                                                    <p>• <strong>制定项目范围说明书：</strong>明确列出"包含功能"和"不包含功能"，CEO签字确认</p>
+                                                    <p>• <strong>建立变更控制委员会（CCB）：</strong>由项目经理、CEO、技术负责人组成，所有变更需经CCB评估</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>工具推荐：使用用户故事地图和MoSCoW优先级方法来可视化范围</em></p>
+                                                </div>
+                                                <div class="bg-emerald-50 p-3 rounded border-l-4 border-emerald-400">
+                                                    <p><strong>加强干系人沟通与期望管理</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>应用权力/利益方格：</strong>将CEO标识为"高权力/高利益"，采取"重点管理"策略</p>
+                                                    <p>• <strong>制定沟通管理计划：</strong>每周与CEO进行正式项目进展汇报，使用仪表板展示进度</p>
+                                                    <p>• <strong>设立"创意停车场"：</strong>记录CEO的所有新想法，承诺在后续版本规划中讨论</p>
+                                                    <p>• <strong>建立跨部门协调机制：</strong>每周举行市场-开发联合站会，增进相互理解</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>心理学技巧：通过"停车场"让CEO感受到被重视，同时保护当前Sprint不受干扰</em></p>
+                                                </div>
+                                                <div class="bg-amber-50 p-3 rounded border-l-4 border-amber-400">
+                                                    <p><strong>应对风险并调整计划</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>召开风险识别会议：</strong>针对AI算法选型进行SWOT分析，评估"第三方API vs 自研"风险</p>
+                                                    <p>• <strong>技术决策：</strong>建议Phase 1使用成熟API快速验证，Phase 2再考虑自研算法</p>
+                                                    <p>• <strong>重新估算时间：</strong>使用WBS分解工作，三点估算法重新计算realistic timeline</p>
+                                                    <p>• <strong>制定应急计划：</strong>如果4个月确实无法完成，准备分阶段交付方案</p>
+                                                    <p>• <strong>团队能力建设：</strong>安排技术培训，建立代码评审机制，提升团队整体水平</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>实用建议：在创业环境中，时间压力巨大时更要坚持科学的项目管理方法</em></p>
+                                                </div>
+                                                <div class="bg-indigo-50 p-3 rounded border-l-4 border-indigo-400">
+                                                    <p><strong>建立项目治理机制</strong></p>
+                                                    <p class="mt-1"><strong>长期措施：</strong></p>
+                                                    <p>• <strong>建立项目章程：</strong>明确项目目标、成功标准、角色职责</p>
+                                                    <p>• <strong>实施敏捷方法：</strong>考虑采用Scrum框架，2周一个Sprint，定期展示可工作软件</p>
+                                                    <p>• <strong>建立度量体系：</strong>跟踪燃尽图、速度图等关键指标</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：在快速变化的创业环境中，敏捷方法比传统瀑布模型更适合</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- 问题情境1 -->
-        <div class="card bg-red-50 shadow-md mb-6">
-            <div class="card-body">
-                <h4 class="card-title text-lg text-red-700">问题情境1：范围蔓延问题</h4>
-                <div class="bg-white p-4 rounded border-2 border-red-200 mb-4">
-                    <p class="mb-3"><strong>情况描述：</strong></p>
-                    <p class="mb-3">项目进行到第3个月时，教务处主任提出希望增加"成绩查询"功能，这个功能原本不在项目范围内。项目经理李华面临压力，不知如何处理。</p>
-                    <p><strong>问题：请分析这种情况的性质，并提供解决方案。</strong></p>
-                </div>
-                
-                <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('scope-answer')">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    查看分析解答
-                </button>
-                <div id="scope-answer" class="alert alert-success mt-3 hidden border-l-4 border-green-500">
-                    <div class="flex items-start">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                        <div class="w-full">
-                            <h4 class="font-bold text-lg mb-3">分析与解答</h4>
-                            
-                            <div class="space-y-4">
-                                <div>
-                                    <h5 class="font-semibold text-base mb-2">问题性质分析：</h5>
-                                    <div class="bg-gray-50 p-3 rounded text-sm">
-                                        <p>这是典型的<strong>范围蔓延（Scope Creep）</strong>问题。</p>
+            <!-- 案例二：项目执行中期的危机 -->
+            <div class="card bg-gradient-to-r from-emerald-50 to-green-50 shadow-lg">
+                <div class="card-body">
+                    <h3 class="card-title text-xl text-emerald-700 mb-4">⚠️ 案例二：项目执行中期的危机</h3>
+                    
+                    <div class="bg-white p-4 rounded-lg border-2 border-emerald-200 mb-4">
+                        <h4 class="font-bold text-lg mb-3">项目背景</h4>
+                        <p class="mb-4">你正在管理一个企业内部CRM系统的升级项目，项目总预算(BAC)为150万元，计划工期12个月。</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-blue-50 p-3 rounded">
+                                <h5 class="font-semibold text-blue-700 mb-2">第6个月末EVM数据</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li><strong>计划价值 (PV)：</strong>75万元</li>
+                                    <li><strong>挣值 (EV)：</strong>60万元</li>
+                                    <li><strong>实际成本 (AC)：</strong>80万元</li>
+                                </ul>
+                            </div>
+                            <div class="bg-red-50 p-3 rounded">
+                                <h5 class="font-semibold text-red-700 mb-2">突发事件</h5>
+                                <p class="text-sm">团队的核心架构师因个人原因突然提出离职，他负责的部分是项目后续最关键的技术模块。</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p><strong>问题：</strong></p>
+                            <ol class="list-decimal ml-6 space-y-1">
+                                <li><strong>量化分析 (4分)：</strong>计算该项目的CV, SV, CPI, SPI，并预测EAC和VAC</li>
+                                <li><strong>诊断问题 (5分)：</strong>结合量化分析和人员离职事件，诊断项目当前面临的主要问题和风险</li>
+                                <li><strong>制定对策 (6分)：</strong>作为项目经理，你将立即采取哪些纠正措施和风险应对措施？</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('case2-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            查看参考答案
+                        </button>
+                        <div id="case2-answer" class="alert alert-success mt-3 hidden border-l-4 border-green-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div class="w-full">
+                                    <h4 class="font-bold text-lg mb-3">参考答案解析</h4>
+                                    
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">1. 量化分析（4分）：</h5>
+                                            <div class="bg-gray-50 p-3 rounded text-sm space-y-2 border-l-4 border-blue-400">
+                                                <p><strong>成本偏差(CV)</strong> = EV - AC = 60 - 80 = <span class="text-red-600 font-bold">-20万元</span></p>
+                                                <p class="text-xs text-gray-600 ml-4">💡 <em>注释：负值表示项目超支，每创造60万元价值实际花费了80万元</em></p>
+                                                
+                                                <p><strong>进度偏差(SV)</strong> = EV - PV = 60 - 75 = <span class="text-red-600 font-bold">-15万元</span></p>
+                                                <p class="text-xs text-gray-600 ml-4">💡 <em>注释：负值表示项目落后于计划，应完成75万元价值的工作，实际只完成了60万元</em></p>
+                                                
+                                                <p><strong>成本绩效指数(CPI)</strong> = EV / AC = 60 / 80 = <span class="text-red-600 font-bold">0.75</span></p>
+                                                <p class="text-xs text-gray-600 ml-4">💡 <em>注释：CPI小于1表示成本效率低下，每花费1元只产出0.75元的价值，效率损失25%</em></p>
+                                                
+                                                <p><strong>进度绩效指数(SPI)</strong> = EV / PV = 60 / 75 = <span class="text-red-600 font-bold">0.8</span></p>
+                                                <p class="text-xs text-gray-600 ml-4">💡 <em>注释：SPI小于1表示进度落后，工作完成率只有计划的80%，相当于原计划5天的工作实际需要6.25天</em></p>
+                                                
+                                                <p><strong>完工估算(EAC)</strong> = BAC / CPI = 150 / 0.75 = <span class="text-red-600 font-bold">200万元</span></p>
+                                                <p class="text-xs text-gray-600 ml-4">💡 <em>注释：如果当前效率持续，项目最终将花费200万元完成，而非预算的150万元</em></p>
+                                                
+                                                <p><strong>完工偏差(VAC)</strong> = BAC - EAC = 150 - 200 = <span class="text-red-600 font-bold">-50万元</span></p>
+                                                <p class="text-xs text-gray-600 ml-4">💡 <em>注释：预计项目将超出预算50万元，即超支33.3%</em></p>
+                                                
+                                                <div class="bg-blue-100 p-2 rounded mt-2">
+                                                    <p class="text-xs"><strong>分析总结：</strong>项目处于"双红"状态（成本超支且进度滞后），且CPI=0.75表明效率问题严重。如不采取纠正措施，项目将超支50万元并可能延期完工。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">2. 问题诊断（5分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-red-50 p-3 rounded border-l-4 border-red-400">
+                                                    <p><strong>项目绩效管理问题</strong></p>
+                                                    <p class="mt-1">• <strong>双重危机：</strong>项目处于成本严重超支(CPI=0.75)且进度显著落后(SPI=0.8)的"双输"局面</p>
+                                                    <p>• <strong>趋势恶化风险：</strong>核心架构师离职可能导致CPI和SPI进一步恶化</p>
+                                                    <p>• <strong>完工风险：</strong>如果维持当前效率，项目将超支33.3%并延期完工</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：EVM指标的"双红"状态通常表明项目存在系统性问题，而非单一因素导致</em></p>
+                                                </div>
+                                                <div class="bg-orange-50 p-3 rounded border-l-4 border-orange-400">
+                                                    <p><strong>项目风险管理问题</strong></p>
+                                                    <p class="mt-1">• <strong>关键人员风险实现：</strong>核心架构师离职是典型的已识别风险变为现实问题</p>
+                                                    <p>• <strong>技术债务风险：</strong>关键模块可能存在未记录的设计决策和隐藏假设</p>
+                                                    <p>• <strong>连锁反应：</strong>一个风险触发多个次生风险，形成风险级联效应</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：研究表明，IT项目中关键人员流失往往是项目失败的前兆，需要立即应对</em></p>
+                                                </div>
+                                                <div class="bg-yellow-50 p-3 rounded border-l-4 border-yellow-400">
+                                                    <p><strong>人力资源管理问题</strong></p>
+                                                    <p class="mt-1">• <strong>知识管理缺失：</strong>关键技术知识集中在个人而非团队，缺乏知识共享机制</p>
+                                                    <p>• <strong>团队士气危机：</strong>核心成员离职可能导致其他团队成员士气低落，产生"多米诺效应"</p>
+                                                    <p>• <strong>替代难度：</strong>项目中期替换核心技术人员的难度远高于项目初期</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：布鲁克斯法则提醒我们，向进度落后的项目增加人手往往会使项目更加落后</em></p>
+                                                </div>
+                                                <div class="bg-indigo-50 p-3 rounded border-l-4 border-indigo-400">
+                                                    <p><strong>项目沟通管理问题</strong></p>
+                                                    <p class="mt-1">• <strong>客户沟通风险：</strong>项目状态不佳且核心人员离职的情况需要妥善向客户沟通</p>
+                                                    <p>• <strong>透明度不足：</strong>EVM指标异常可能未得到及时上报和处理</p>
+                                                    <p>• <strong>期望管理：</strong>客户对项目状态了解不足，可能期望与现实存在差距</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：不良消息传递延迟是项目管理中的常见现象，但越早沟通问题，解决成本越低</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">3. 制定对策（6分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-blue-50 p-3 rounded border-l-4 border-blue-400">
+                                                    <p><strong>立即纠正项目绩效</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>深入分析偏差根源：</strong>召开专题会议，使用鱼骨图分析CPI和SPI低下的具体原因</p>
+                                                    <p>• <strong>重新评估剩余工作：</strong>使用自下而上估算法重新评估所有剩余工作包</p>
+                                                    <p>• <strong>应用进度压缩技术：</strong>识别关键路径，考虑赶工或快速跟进方法</p>
+                                                    <p>• <strong>调整资源分配：</strong>重新平衡团队工作负载，优化资源使用效率</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>技巧提示：使用挣得进度(ES)分析来更准确地预测项目完工时间，特别是在进度偏差较大时</em></p>
+                                                </div>
+                                                <div class="bg-green-50 p-3 rounded border-l-4 border-green-400">
+                                                    <p><strong>应对人员离职风险</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>安排紧急知识交接：</strong>与离职架构师协商延长交接期，进行密集知识转移</p>
+                                                    <p>• <strong>建立技术文档：</strong>要求离职人员记录关键设计决策、假设和未解决问题</p>
+                                                    <p>• <strong>寻找替代资源：</strong>考虑内部调动有经验的架构师，或聘请外部顾问</p>
+                                                    <p>• <strong>实施结对编程：</strong>安排团队成员与离职架构师结对，加速知识传递</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>管理技巧：与离职员工保持良好关系，考虑顾问式离职安排，确保后续可以咨询</em></p>
+                                                </div>
+                                                <div class="bg-purple-50 p-3 rounded border-l-4 border-purple-400">
+                                                    <p><strong>加强管理与沟通</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>启动正式变更控制：</strong>评估项目基准变更需求，准备变更请求</p>
+                                                    <p>• <strong>干系人沟通：</strong>主动向客户和高管层汇报项目状态，展示挽救计划</p>
+                                                    <p>• <strong>调整预期：</strong>必要时与客户协商调整项目范围、时间或预算</p>
+                                                    <p>• <strong>增加透明度：</strong>建立每周项目状态仪表板，突出显示EVM指标和趋势</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>沟通策略：在沟通问题的同时提出解决方案，展示掌控能力比隐藏问题更能赢得信任</em></p>
+                                                </div>
+                                                <div class="bg-amber-50 p-3 rounded border-l-4 border-amber-400">
+                                                    <p><strong>制定项目挽救计划</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>重新规划项目：</strong>考虑重新规划剩余工作，调整优先级和交付顺序</p>
+                                                    <p>• <strong>分阶段交付：</strong>将剩余功能分为必要功能和可延期功能，确保核心价值先交付</p>
+                                                    <p>• <strong>增强质量控制：</strong>加强代码审查和测试，防止架构师离职导致质量下滑</p>
+                                                    <p>• <strong>设立项目恢复里程碑：</strong>制定短期目标，逐步恢复项目健康状态</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>项目挽救技巧：设定"快速胜利"目标，通过小成功重建团队信心和项目动力</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                
-                                <div>
-                                    <h5 class="font-semibold text-base mb-2">解决方案：</h5>
-                                    <div class="bg-blue-50 p-3 rounded text-sm">
-                                        <p><strong>1. 启动正式变更控制流程</strong></p>
-                                        <p><strong>2. 评估影响</strong></p>
-                                        <p><strong>3. 制定应对策略</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 案例三：高绩效团队的内部冲突 -->
+            <div class="card bg-gradient-to-r from-amber-50 to-yellow-50 shadow-lg">
+                <div class="card-body">
+                    <h3 class="card-title text-xl text-amber-700 mb-4">🤝 案例三：高绩效团队的内部冲突</h3>
+                    
+                    <div class="bg-white p-4 rounded-lg border-2 border-amber-200 mb-4">
+                        <h4 class="font-bold text-lg mb-3">项目背景</h4>
+                        <p class="mb-4">你带领一个由8名资深工程师组成的团队，负责一个高难度的数据中台项目。项目前期表现出色，团队处于成熟期。</p>
+                        
+                        <div class="bg-red-50 p-3 rounded mb-4">
+                            <h5 class="font-semibold text-red-700 mb-2">冲突事件</h5>
+                            <p class="text-sm mb-2">进入项目中后期，两位负责不同核心模块的技术专家在技术方案评审会上就接口设计标准发生激烈争执：</p>
+                            <ul class="text-sm space-y-1">
+                                <li><strong>王专家：</strong>应遵循公司现有的、更稳妥的A标准</li>
+                                <li><strong>李专家：</strong>应采用业界更新的、性能更好的B标准</li>
+                                <li><strong>结果：</strong>争吵演变为人身攻击，两人互不配合，关键接口开发工作完全停滞</li>
+                            </ul>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p><strong>问题：</strong></p>
+                            <ol class="list-decimal ml-6 space-y-1">
+                                <li><strong>识别问题 (3分)：</strong>指出当前项目面临的核心问题及其可能造成的具体影响</li>
+                                <li><strong>映射知识领域与诊断原因 (5分)：</strong>从团队发展和冲突管理角度分析根本原因</li>
+                                <li><strong>制定解决方案 (7分)：</strong>如何分步骤地解决这次冲突，并修复团队关系？</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('case3-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            查看参考答案
+                        </button>
+                        <div id="case3-answer" class="alert alert-success mt-3 hidden border-l-4 border-green-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div class="w-full">
+                                    <h4 class="font-bold text-lg mb-3">参考答案解析</h4>
+                                    
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">1. 识别问题（3分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-red-50 p-3 rounded border-l-4 border-red-400">
+                                                    <p><strong>核心问题：严重的破坏性冲突</strong></p>
+                                                    <p class="mt-1">• <strong>团队发展阶段倒退：</strong>原本处于"成熟期"的高绩效团队因冲突退化到"震荡期"</p>
+                                                    <p>• <strong>技术分歧升级：</strong>接口标准的技术分歧演变为人身攻击，超出了专业讨论范畴</p>
+                                                    <p>• <strong>工作协作中断：</strong>两位核心技术专家互不配合，阻碍了关键接口开发进展</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：塔克曼模型指出，团队发展并非总是线性的，外部压力或内部冲突都可能导致团队倒退到之前的阶段</em></p>
+                                                </div>
+                                                <div class="bg-orange-50 p-3 rounded border-l-4 border-orange-400">
+                                                    <p><strong>具体影响与风险</strong></p>
+                                                    <p class="mt-1">• <strong>项目进度停滞：</strong>关键接口开发工作完全停滞，可能导致整个项目延期</p>
+                                                    <p>• <strong>沟通渠道瘫痪：</strong>两位专家之间的沟通渠道中断，信息流转受阻</p>
+                                                    <p>• <strong>团队士气低落：</strong>核心成员的公开冲突可能影响整个团队的工作氛围和协作意愿</p>
+                                                    <p>• <strong>技术质量风险：</strong>接口设计标准争议未解决，可能导致系统集成问题和技术债务</p>
+                                                    <p>• <strong>连锁反应风险：</strong>冲突可能扩散到团队其他成员，形成"站队"现象</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：研究表明，技术团队中的人际冲突比任务冲突对项目成功的威胁更大，因为它会破坏信任基础</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">2. 映射知识领域与诊断原因（5分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-blue-50 p-3 rounded border-l-4 border-blue-400">
+                                                    <p><strong>人力资源管理（PMBOK第9章）</strong></p>
+                                                    <p class="mt-1"><strong>涉及过程：</strong>管理团队、建设团队</p>
+                                                    <p><strong>根本原因：</strong></p>
+                                                    <p>• <strong>冲突管理机制失效：</strong>项目经理未能及时识别和干预技术分歧，让其升级为人际冲突</p>
+                                                    <p>• <strong>团队状态倒退：</strong>从塔克曼模型的"成熟期"退回到"震荡期"，需要重建团队规范</p>
+                                                    <p>• <strong>个人风格差异：</strong>两位专家可能有不同的工作风格和沟通偏好，缺乏相互适应</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：托马斯-基尔曼冲突模式理论指出，技术专家往往倾向于"竞争"模式而非"协作"模式</em></p>
+                                                </div>
+                                                <div class="bg-green-50 p-3 rounded border-l-4 border-green-400">
+                                                    <p><strong>沟通管理（PMBOK第10章）</strong></p>
+                                                    <p class="mt-1"><strong>涉及过程：</strong>管理沟通、监督沟通</p>
+                                                    <p><strong>根本原因：</strong></p>
+                                                    <p>• <strong>技术沟通渠道中断：</strong>两位专家之间的直接沟通渠道已被情绪阻断</p>
+                                                    <p>• <strong>沟通方式不当：</strong>技术评审会可能缺乏明确的沟通规则和决策流程</p>
+                                                    <p>• <strong>缺乏有效的冲突升级机制：</strong>当技术分歧出现时，没有明确的升级和解决路径</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：沟通渠道数量公式N(N-1)/2提醒我们，8人团队有28个沟通渠道，任一渠道中断都会影响整体效率</em></p>
+                                                </div>
+                                                <div class="bg-purple-50 p-3 rounded border-l-4 border-purple-400">
+                                                    <p><strong>心理与行为因素分析</strong></p>
+                                                    <p class="mt-1"><strong>深层原因：</strong></p>
+                                                    <p>• <strong>专业自尊心过度：</strong>技术专家往往对自己的专业判断有强烈的自信和坚持</p>
+                                                    <p>• <strong>缺乏建设性冲突文化：</strong>团队可能习惯于和谐而缺乏处理健康分歧的经验</p>
+                                                    <p>• <strong>"零和思维"：</strong>两位专家将技术决策视为输赢问题而非最优解问题</p>
+                                                    <p>• <strong>情绪智力不足：</strong>未能控制情绪，让技术讨论演变为个人攻击</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：帕特里克·伦西奥尼的"五大团队功能障碍"理论指出，对冲突的恐惧会导致表面和谐但实际问题积累</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">3. 分步骤解决方案（7分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-cyan-50 p-3 rounded border-l-4 border-cyan-400">
+                                                    <p><strong>第一步：立即隔离与降温（24-48小时内）</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>个别沟通：</strong>分别与两位专家进行一对一谈话，让他们有机会表达观点和情绪</p>
+                                                    <p>• <strong>积极倾听：</strong>应用LARA方法（倾听Listen、确认Affirm、回应Respond、询问Ask）理解双方立场</p>
+                                                    <p>• <strong>强调共同目标：</strong>重申项目目标和团队使命，将焦点从个人分歧转向共同责任</p>
+                                                    <p>• <strong>暂时分离工作：</strong>短期内安排他们在不同的工作流中，避免直接冲突</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>心理学提示：情绪降温期至关重要，研究表明人在情绪激动时无法进行理性决策和有效沟通</em></p>
+                                                </div>
+                                                <div class="bg-emerald-50 p-3 rounded border-l-4 border-emerald-400">
+                                                    <p><strong>第二步：引导建设性对话（3-5天后）</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>准备结构化会议：</strong>设计有明确议程和基本规则的技术决策会议</p>
+                                                    <p>• <strong>引入第三方调解：</strong>邀请受双方尊重的技术专家或架构师参与讨论</p>
+                                                    <p>• <strong>基于数据的决策：</strong>要求双方准备支持各自标准的客观数据和测试结果</p>
+                                                    <p>• <strong>应用决策矩阵：</strong>建立评估标准（性能、兼容性、维护性、风险等），量化评分</p>
+                                                    <p>• <strong>探索折中方案：</strong>考虑是否可以结合两种标准的优点或分阶段实施</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>冲突解决技巧：使用"我们对抗问题"而非"我对抗你"的框架，将双方置于同一阵营</em></p>
+                                                </div>
+                                                <div class="bg-amber-50 p-3 rounded border-l-4 border-amber-400">
+                                                    <p><strong>第三步：修复团队关系（1-2周内）</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>公开确认解决方案：</strong>在团队会议上宣布接口标准的最终决定和决策理由</p>
+                                                    <p>• <strong>肯定双方贡献：</strong>明确指出两位专家各自的专业贡献和建设性意见</p>
+                                                    <p>• <strong>组织团队建设活动：</strong>安排非工作环境下的团队活动，重建人际关系</p>
+                                                    <p>• <strong>结对编程/设计：</strong>安排两位专家在非关键任务上合作，重建工作关系</p>
+                                                    <p>• <strong>建立冲突解决规范：</strong>制定团队技术分歧解决流程，包括升级机制和决策方法</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>团队心理学：修复信任需要时间，但共同完成有意义的任务是重建关系的最有效方式</em></p>
+                                                </div>
+                                                <div class="bg-indigo-50 p-3 rounded border-l-4 border-indigo-400">
+                                                    <p><strong>第四步：长期预防措施（持续实施）</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>建立技术治理框架：</strong>明确技术决策流程、标准和权责</p>
+                                                    <p>• <strong>定期团队健康检查：</strong>使用团队雷达图等工具评估团队协作状态</p>
+                                                    <p>• <strong>冲突管理培训：</strong>为团队提供建设性冲突和有效沟通的培训</p>
+                                                    <p>• <strong>定期回顾会：</strong>在Sprint回顾或项目里程碑时讨论团队协作改进点</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>管理哲学：高绩效团队不是没有冲突，而是能够将冲突转化为创新和进步的动力</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 案例四：敏捷项目的范围困境 -->
+            <div class="card bg-gradient-to-r from-rose-50 to-pink-50 shadow-lg">
+                <div class="card-body">
+                    <h3 class="card-title text-xl text-rose-700 mb-4">🏃‍♂️ 案例四：敏捷项目的范围困境</h3>
+                    
+                    <div class="bg-white p-4 rounded-lg border-2 border-rose-200 mb-4">
+                        <h4 class="font-bold text-lg mb-3">项目背景</h4>
+                        <p class="mb-4">你是一家金融科技公司的Scrum Master，负责一个采用Scrum框架开发的"智能投顾"项目。项目已成功完成5个两周的Sprint。</p>
+                        
+                        <div class="bg-red-50 p-3 rounded mb-4">
+                            <h5 class="font-semibold text-red-700 mb-2">第6个Sprint计划会上的冲突</h5>
+                            <div class="text-sm space-y-2">
+                                <p><strong>产品负责人(PO)：</strong>带来公司高层的"紧急最高优先级"需求：必须在本Sprint内增加"加密货币投资"模块</p>
+                                <p><strong>开发团队：</strong>评估后认为这个模块技术复杂度极高，需要3个Sprint，会严重影响原计划功能交付</p>
+                                <p><strong>结果：</strong>团队情绪激动，认为高层不尊重敏捷流程，PO夹在中间压力巨大</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p><strong>问题：</strong></p>
+                            <ol class="list-decimal ml-6 space-y-1">
+                                <li><strong>识别问题 (3分)：</strong>这个场景暴露了敏捷项目管理中的哪些典型问题？</li>
+                                <li><strong>映射知识领域与诊断原因 (5分)：</strong>主要与哪些项目管理知识领域或敏捷原则有关？根本原因是什么？</li>
+                                <li><strong>制定解决方案 (7分)：</strong>作为Scrum Master，如何引导这次Sprint计划会并找到可行解决方案？</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('case4-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            查看参考答案
+                        </button>
+                        <div id="case4-answer" class="alert alert-success mt-3 hidden border-l-4 border-green-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div class="w-full">
+                                    <h4 class="font-bold text-lg mb-3">参考答案解析</h4>
+                                    
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">1. 识别问题（3分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-red-50 p-3 rounded border-l-4 border-red-400">
+                                                    <p><strong>破坏性的范围变更问题</strong></p>
+                                                    <p class="mt-1">• <strong>Sprint内容突变：</strong>"加密货币投资"模块作为紧急需求被强行插入已规划的Sprint</p>
+                                                    <p>• <strong>需求规模与Sprint不匹配：</strong>团队评估需要3个Sprint的工作量被要求在1个Sprint内完成</p>
+                                                    <p>• <strong>技术复杂度评估被忽视：</strong>团队对技术复杂度的专业评估被高层决策忽略</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：敏捷宣言强调"响应变化高于遵循计划"，但这并不意味着接受任何变化，尤其是破坏性变化</em></p>
+                                                </div>
+                                                <div class="bg-orange-50 p-3 rounded border-l-4 border-orange-400">
+                                                    <p><strong>敏捷流程与原则被破坏</strong></p>
+                                                    <p class="mt-1">• <strong>高层直接干预Sprint内容：</strong>绕过正常的产品待办列表优先级排序过程</p>
+                                                    <p>• <strong>自组织团队原则受损：</strong>团队对工作量的评估被忽视，自主权被削弱</p>
+                                                    <p>• <strong>可持续开发节奏被打破：</strong>要求团队在固定时间框内完成超出能力的工作</p>
+                                                    <p>• <strong>Sprint承诺的完整性受损：</strong>已规划的功能交付承诺可能无法兑现</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：Scrum指南明确指出，一旦Sprint开始，其目标不应改变，范围可以澄清和重新协商</em></p>
+                                                </div>
+                                                <div class="bg-yellow-50 p-3 rounded border-l-4 border-yellow-400">
+                                                    <p><strong>角色冲突与团队动态问题</strong></p>
+                                                    <p class="mt-1">• <strong>产品负责人(PO)角色困境：</strong>PO夹在高层和开发团队之间，无法有效履行职责</p>
+                                                    <p>• <strong>团队与PO关系紧张：</strong>就需求可行性和优先级产生尖锐矛盾，信任受损</p>
+                                                    <p>• <strong>团队情绪激动：</strong>团队感到不被尊重，可能导致士气低落和抵抗情绪</p>
+                                                    <p>• <strong>Scrum Master角色挑战：</strong>需要在保护团队和响应业务需求之间取得平衡</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：研究表明，敏捷团队的自主权被侵犯是团队解体的主要原因之一</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">2. 映射知识领域与诊断原因（5分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-blue-50 p-3 rounded border-l-4 border-blue-400">
+                                                    <p><strong>敏捷项目管理与范围管理</strong></p>
+                                                    <p class="mt-1"><strong>相关敏捷原则：</strong></p>
+                                                    <p>• <strong>Sprint保护原则：</strong>Sprint一旦开始，其范围不应被外部强制更改</p>
+                                                    <p>• <strong>产品待办列表管理：</strong>新需求应通过产品待办列表优先级排序进入后续Sprint</p>
+                                                    <p>• <strong>团队速度尊重：</strong>工作量应基于团队历史速度和能力进行规划</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：敏捷范围管理的核心是"变化是有序的"，而不是"变化可以是混乱的"</em></p>
+                                                </div>
+                                                <div class="bg-green-50 p-3 rounded border-l-4 border-green-400">
+                                                    <p><strong>干系人管理与组织治理</strong></p>
+                                                    <p class="mt-1"><strong>根本原因：</strong></p>
+                                                    <p>• <strong>高层期望管理不足：</strong>高层管理者对敏捷流程的理解和尊重不足</p>
+                                                    <p>• <strong>PO角色弱化：</strong>PO未能有效守护产品待办列表和管理干系人期望</p>
+                                                    <p>• <strong>组织敏捷成熟度不足：</strong>组织文化仍保留命令控制式管理方式</p>
+                                                    <p>• <strong>缺乏明确的紧急需求处理机制：</strong>未建立处理"紧急最高优先级"需求的标准流程</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：研究表明，组织转型为敏捷时，中高层管理者的角色转变往往是最大挑战</em></p>
+                                                </div>
+                                                <div class="bg-purple-50 p-3 rounded border-l-4 border-purple-400">
+                                                    <p><strong>沟通管理与透明度问题</strong></p>
+                                                    <p class="mt-1"><strong>根本原因：</strong></p>
+                                                    <p>• <strong>透明度缺失：</strong>团队能力和工作量评估未能透明地传达给高层决策者</p>
+                                                    <p>• <strong>沟通渠道不畅：</strong>高层需求直接传达给PO，绕过了正常的需求管理流程</p>
+                                                    <p>• <strong>期望不匹配：</strong>高层对"加密货币投资"功能的复杂性认知与开发团队评估存在差距</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：敏捷的三大支柱是透明、检视和适应，其中透明是基础，缺失则导致其他支柱崩塌</em></p>
+                                                </div>
+                                                <div class="bg-indigo-50 p-3 rounded border-l-4 border-indigo-400">
+                                                    <p><strong>敏捷价值观与文化冲突</strong></p>
+                                                    <p class="mt-1"><strong>深层原因：</strong></p>
+                                                    <p>• <strong>敏捷价值观未内化：</strong>组织虽采用Scrum框架，但未真正内化敏捷价值观</p>
+                                                    <p>• <strong>信任缺失：</strong>高层不信任团队的专业评估，团队不信任PO的决策</p>
+                                                    <p>• <strong>业务与技术平衡失调：</strong>业务需求被视为凌驾于技术现实之上</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：真正的敏捷转型需要组织文化的改变，而非仅仅采用敏捷实践</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">3. 分步骤解决方案（7分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-cyan-50 p-3 rounded border-l-4 border-cyan-400">
+                                                    <p><strong>第一步：保护团队和流程（立即行动）</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>暂停争论：</strong>作为Scrum Master，暂停当前的争论，降低情绪温度</p>
+                                                    <p>• <strong>重申Scrum规则：</strong>清晰解释Sprint计划会的目的和团队自组织的重要性</p>
+                                                    <p>• <strong>引导关注点分离：</strong>将讨论从"是否接受需求"转向"如何处理这一情况"</p>
+                                                    <p>• <strong>确认各方关切：</strong>确认PO传达的业务重要性，也确认团队对技术复杂性的担忧</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>引导技巧：使用"我们如何共同解决这个挑战"的框架，避免对立局面</em></p>
+                                                </div>
+                                                <div class="bg-emerald-50 p-3 rounded border-l-4 border-emerald-400">
+                                                    <p><strong>第二步：创造透明度（同一会议内）</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>需求具体化分解：</strong>引导PO和团队将"加密货币投资"模块分解为更小的用户故事</p>
+                                                    <p>• <strong>进行故事点估算：</strong>使用规划扑克对分解后的故事进行估算，量化工作量</p>
+                                                    <p>• <strong>可视化影响：</strong>在看板或燃尽图上展示新需求对当前Sprint的影响</p>
+                                                    <p>• <strong>计算替换成本：</strong>明确展示加入新需求将导致哪些原计划功能被推迟</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>透明度技巧：用数据说话，避免主观判断，让决策基于客观事实</em></p>
+                                                </div>
+                                                <div class="bg-amber-50 p-3 rounded border-l-4 border-amber-400">
+                                                    <p><strong>第三步：促成共识与决策（会议结束前）</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>提供多种选项：</strong>基于前面的分析，提出几种可能的解决方案：</p>
+                                                    <p>1. <strong>MVP方案：</strong>在本Sprint中只开发加密货币功能的最小可行版本</p>
+                                                    <p>2. <strong>预研方案：</strong>本Sprint进行技术预研和原型，功能实现放入后续Sprint</p>
+                                                    <p>3. <strong>取消当前Sprint：</strong>异常终止当前Sprint，重新规划包含新需求的Sprint</p>
+                                                    <p>4. <strong>并行开发：</strong>部分团队继续原计划，部分团队开始新需求调研</p>
+                                                    <p>• <strong>支持PO决策：</strong>提供决策所需信息，支持PO做出最终选择</p>
+                                                    <p>• <strong>明确后续步骤：</strong>无论选择哪种方案，明确接下来的具体行动</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>决策技巧：确保决策权在PO手中，Scrum Master不做内容决策，只引导过程</em></p>
+                                                </div>
+                                                <div class="bg-indigo-50 p-3 rounded border-l-4 border-indigo-400">
+                                                    <p><strong>第四步：长期改进措施（Sprint结束后）</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>组织敏捷工作坊：</strong>邀请高层参与，解释敏捷原则和Scrum框架的价值</p>
+                                                    <p>• <strong>建立紧急需求处理流程：</strong>制定标准流程处理高优先级需求插入</p>
+                                                    <p>• <strong>强化PO角色：</strong>提供PO额外培训，增强其管理产品待办列表和干系人期望的能力</p>
+                                                    <p>• <strong>增加组织透明度：</strong>邀请高层参与Sprint评审，增进对团队工作的理解</p>
+                                                    <p>• <strong>在Sprint回顾中讨论：</strong>将此事件作为团队改进的学习机会</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>组织发展提示：真正的敏捷转型需要从上至下的支持和理解，这是一个持续教育过程</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 案例五：交付后的质量灾难 -->
+            <div class="card bg-gradient-to-r from-indigo-50 to-blue-50 shadow-lg">
+                <div class="card-body">
+                    <h3 class="card-title text-xl text-indigo-700 mb-4">💥 案例五：交付后的质量灾难</h3>
+                    
+                    <div class="bg-white p-4 rounded-lg border-2 border-indigo-200 mb-4">
+                        <h4 class="font-bold text-lg mb-3">项目背景</h4>
+                        <p class="mb-4">你所在公司通过固定总价合同为重要客户开发物流管理系统。为赶截止日期，项目经理多次要求测试团队"优先保证核心功能通过"。</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div class="bg-green-50 p-3 rounded">
+                                <h5 class="font-semibold text-green-700 mb-2">项目"成功"交付</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>按时交付</li>
+                                    <li>演示时核心流程正常</li>
+                                    <li>客户验收报告已签字</li>
+                                </ul>
+                            </div>
+                            <div class="bg-red-50 p-3 rounded">
+                                <h5 class="font-semibold text-red-700 mb-2">上线一周后的灾难</h5>
+                                <ul class="text-sm space-y-1">
+                                    <li>非核心功能频繁崩溃</li>
+                                    <li>高并发时出现数据错误</li>
+                                    <li>客户投诉，商誉损失严重</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <p><strong>问题：</strong></p>
+                            <ol class="list-decimal ml-6 space-y-1">
+                                <li><strong>识别问题 (3分)：</strong>该项目在"按时交付"背后隐藏了哪些致命问题？</li>
+                                <li><strong>映射知识领域与诊断原因 (5分)：</strong>从质量成本、过程和项目制约因素角度分析根本原因</li>
+                                <li><strong>事后复盘与未来改进 (7分)：</strong>作为PMO负责人，如何组织经验教训总结并提出改进建议？</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn btn-primary btn-sm gap-2" onclick="showAnswer('case5-answer')">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            查看参考答案
+                        </button>
+                        <div id="case5-answer" class="alert alert-success mt-3 hidden border-l-4 border-green-500">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                <div class="w-full">
+                                    <h4 class="font-bold text-lg mb-3">参考答案解析</h4>
+                                    
+                                    <div class="space-y-4">
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">1. 识别问题（3分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-red-50 p-3 rounded border-l-4 border-red-400">
+                                                    <p><strong>严重的质量缺陷与系统性失效</strong></p>
+                                                    <p class="mt-1">• <strong>功能稳定性问题：</strong>非核心功能频繁崩溃，表明系统架构存在根本缺陷</p>
+                                                    <p>• <strong>数据完整性问题：</strong>高并发时出现数据错误，这对物流系统是致命风险</p>
+                                                    <p>• <strong>测试覆盖不足：</strong>"优先保证核心功能通过"的指令导致测试范围严重不足</p>
+                                                    <p>• <strong>性能测试缺失：</strong>未进行高并发场景的性能测试，导致生产环境问题</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：质量不是一个功能点的问题，而是整个系统的属性，忽视"非核心"部分往往导致整体崩溃</em></p>
+                                                </div>
+                                                <div class="bg-orange-50 p-3 rounded border-l-4 border-orange-400">
+                                                    <p><strong>项目管理三重制约的失衡</strong></p>
+                                                    <p class="mt-1">• <strong>虚假的项目"成功"：</strong>表面上满足了时间制约，实际上牺牲了质量和最终成本</p>
+                                                    <p>• <strong>短视的决策：</strong>为赶截止日期而降低质量标准，忽视了长期后果</p>
+                                                    <p>• <strong>验收标准不当：</strong>仅以演示时的核心流程正常作为验收标准，忽视全面测试</p>
+                                                    <p>• <strong>质量债务积累：</strong>交付时的质量问题转化为上线后的运维灾难</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：项目管理铁三角理论提醒我们，在固定总价合同中，牺牲质量最终会导致成本和时间的双重损失</em></p>
+                                                </div>
+                                                <div class="bg-yellow-50 p-3 rounded border-l-4 border-yellow-400">
+                                                    <p><strong>商业与合同风险</strong></p>
+                                                    <p class="mt-1">• <strong>客户关系严重受损：</strong>系统问题导致客户业务受损，信任完全破裂</p>
+                                                    <p>• <strong>商誉损失：</strong>重要客户的负面体验可能影响公司在整个行业的声誉</p>
+                                                    <p>• <strong>合同与法律风险：</strong>尽管客户已签字验收，但系统无法正常运行可能导致法律纠纷</p>
+                                                    <p>• <strong>维护成本激增：</strong>需要紧急修复问题，可能需要投入大量额外资源</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：研究表明，挽回一个不满意客户的成本是维护一个满意客户的5-25倍</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">2. 映射知识领域与诊断原因（5分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-blue-50 p-3 rounded border-l-4 border-blue-400">
+                                                    <p><strong>项目质量管理（PMBOK第8章）</strong></p>
+                                                    <p class="mt-1"><strong>涉及过程：</strong>规划质量管理、实施质量保证、控制质量</p>
+                                                    <p><strong>根本原因：</strong></p>
+                                                    <p>• <strong>质量规划不足：</strong>未建立全面的质量管理计划和质量标准</p>
+                                                    <p>• <strong>质量保证活动缺失：</strong>未进行独立的质量审计和过程改进</p>
+                                                    <p>• <strong>质量控制选择性执行：</strong>仅关注核心功能，忽视系统整体质量</p>
+                                                    <p>• <strong>质量度量标准不当：</strong>以功能演示通过作为质量衡量标准，而非全面测试</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：质量管理应贯穿项目全生命周期，而非仅在测试阶段关注</em></p>
+                                                </div>
+                                                <div class="bg-green-50 p-3 rounded border-l-4 border-green-400">
+                                                    <p><strong>质量成本分析（PAF模型）</strong></p>
+                                                    <p class="mt-1"><strong>质量成本分类：</strong></p>
+                                                    <p>• <strong>预防成本不足：</strong>未投入足够资源进行质量规划、培训和预防活动</p>
+                                                    <p>• <strong>评估成本压缩：</strong>为赶进度而缩减测试范围和深度，节省了评估成本</p>
+                                                    <p>• <strong>内部失败成本转移：</strong>未在交付前发现并修复缺陷，避免了短期内部失败成本</p>
+                                                    <p>• <strong>外部失败成本激增：</strong>问题转移到客户环境后，导致极高的外部失败成本，包括修复、赔偿、声誉损失等</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：质量成本冰山理论指出，外部失败成本是内部失败成本的4-5倍，而内部失败成本是预防成本的10倍</em></p>
+                                                </div>
+                                                <div class="bg-purple-50 p-3 rounded border-l-4 border-purple-400">
+                                                    <p><strong>项目制约因素与决策分析</strong></p>
+                                                    <p class="mt-1"><strong>决策偏差：</strong></p>
+                                                    <p>• <strong>时间偏好过强：</strong>将时间（按时交付）置于绝对优先地位</p>
+                                                    <p>• <strong>质量认知偏差：</strong>错误地认为质量可以在后期"补救"，而非内建于开发过程</p>
+                                                    <p>• <strong>短期导向：</strong>为了满足短期目标（按时交付）而牺牲长期价值（系统质量）</p>
+                                                    <p>• <strong>确认偏误：</strong>演示成功强化了"系统已准备就绪"的错误认知</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：德明模型(Forming-Storming-Norming-Performing)提醒我们，项目团队在压力下容易形成集体思维，忽视风险</em></p>
+                                                </div>
+                                                <div class="bg-indigo-50 p-3 rounded border-l-4 border-indigo-400">
+                                                    <p><strong>组织与流程因素分析</strong></p>
+                                                    <p class="mt-1"><strong>组织缺陷：</strong></p>
+                                                    <p>• <strong>质量文化缺失：</strong>组织文化重视交付日期胜过产品质量</p>
+                                                    <p>• <strong>测试团队授权不足：</strong>测试团队无权坚持质量标准，被迫妥协</p>
+                                                    <p>• <strong>项目治理失效：</strong>缺乏独立的质量监督机制和有效的质量门禁</p>
+                                                    <p>• <strong>激励机制不当：</strong>可能存在激励按时交付而非保证质量的绩效考核</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>注释：组织行为学研究表明，员工行为往往遵循"被考核的才会被重视"的原则</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <h5 class="font-semibold text-base mb-2">3. 事后复盘与未来改进（7分）：</h5>
+                                            <div class="space-y-3 text-sm">
+                                                <div class="bg-cyan-50 p-3 rounded border-l-4 border-cyan-400">
+                                                    <p><strong>组织经验教训总结会</strong></p>
+                                                    <p class="mt-1"><strong>具体行动：</strong></p>
+                                                    <p>• <strong>采用"对事不对人"原则：</strong>创造安全的环境，鼓励团队成员坦诚分享</p>
+                                                    <p>• <strong>应用5Why分析法：</strong>深入挖掘问题根源，而非停留在表面现象</p>
+                                                    <p>• <strong>邀请跨职能参与：</strong>确保开发、测试、项目管理、业务分析师等各角色参与</p>
+                                                    <p>• <strong>形成结构化文档：</strong>将经验教训整理为组织过程资产，便于其他项目借鉴</p>
+                                                    <p>• <strong>制定具体改进措施：</strong>针对每个识别的问题，提出可操作的改进建议</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>引导技巧：使用"学习型组织"模式，将失败视为组织学习和成长的机会</em></p>
+                                                </div>
+                                                <div class="bg-emerald-50 p-3 rounded border-l-4 border-emerald-400">
+                                                    <p><strong>质量流程改进建议</strong></p>
+                                                    <p class="mt-1"><strong>具体措施：</strong></p>
+                                                    <p>• <strong>建立质量门禁机制：</strong>设定明确的质量标准和检查点，未通过不允许进入下一阶段</p>
+                                                    <p>• <strong>强化QA职能与权限：</strong>提升测试团队的组织地位，赋予其否决发布的权力</p>
+                                                    <p>• <strong>实施全面测试策略：</strong>要求功能测试、性能测试、安全测试等全方位覆盖</p>
+                                                    <p>• <strong>引入独立质量审计：</strong>由非项目团队成员进行定期质量审计和评估</p>
+                                                    <p>• <strong>重新定义项目成功标准：</strong>将质量指标纳入项目成功的关键评判标准</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>质量管理理念：质量应该"内建"而非"检验"，应贯穿项目全生命周期</em></p>
+                                                </div>
+                                                <div class="bg-amber-50 p-3 rounded border-l-4 border-amber-400">
+                                                    <p><strong>技术实践与工具改进</strong></p>
+                                                    <p class="mt-1"><strong>具体措施：</strong></p>
+                                                    <p>• <strong>推行自动化测试：</strong>建立自动化测试框架，提高测试覆盖率和效率</p>
+                                                    <p>• <strong>实施持续集成/持续部署：</strong>建立CI/CD流水线，实现早期发现问题</p>
+                                                    <p>• <strong>引入代码质量工具：</strong>使用静态代码分析、代码覆盖率等工具监控代码质量</p>
+                                                    <p>• <strong>建立性能监控体系：</strong>在开发和测试环境中模拟生产负载，及早发现性能问题</p>
+                                                    <p>• <strong>实施测试驱动开发：</strong>考虑采用TDD等方法，将测试前置</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>技术建议：自动化测试金字塔模型建议70%单元测试、20%集成测试、10%UI测试的比例</em></p>
+                                                </div>
+                                                <div class="bg-rose-50 p-3 rounded border-l-4 border-rose-400">
+                                                    <p><strong>组织与人员发展建议</strong></p>
+                                                    <p class="mt-1"><strong>具体措施：</strong></p>
+                                                    <p>• <strong>加强项目经理培训：</strong>强化质量管理知识和技能，纠正"铁三角"认知偏差</p>
+                                                    <p>• <strong>调整绩效考核机制：</strong>将质量指标纳入项目团队和管理者的绩效考核</p>
+                                                    <p>• <strong>建立质量文化：</strong>高管层明确表态支持质量优先，树立质量典范</p>
+                                                    <p>• <strong>提升测试团队能力：</strong>投资测试团队的技能提升和工具应用能力</p>
+                                                    <p>• <strong>改进客户沟通策略：</strong>建立更透明的客户沟通机制，及早管理期望</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>组织变革提示：文化变革需要自上而下的支持和自下而上的实践相结合</em></p>
+                                                </div>
+                                                <div class="bg-blue-100 p-3 rounded border-l-4 border-blue-500">
+                                                    <p><strong>合同与客户管理改进</strong></p>
+                                                    <p class="mt-1"><strong>具体措施：</strong></p>
+                                                    <p>• <strong>优化合同结构：</strong>在固定总价合同中增加质量指标和验收标准的详细条款</p>
+                                                    <p>• <strong>改进验收流程：</strong>建立更全面的验收测试流程，包括性能和负载测试</p>
+                                                    <p>• <strong>实施分阶段交付：</strong>考虑采用增量交付模式，降低最终交付的风险</p>
+                                                    <p>• <strong>加强客户参与：</strong>邀请客户更早参与测试过程，及时获取反馈</p>
+                                                    <p class="text-xs text-gray-600 mt-2">💡 <em>客户管理提示：客户满意不仅取决于最终产品，还取决于整个交付过程的透明度和参与度</em></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +851,26 @@
             </svg>
             <div>
                 <h3 class="font-bold">案例分析题解题要点</h3>
-                <p class="mt-2">案例分析题要求运用项目管理理论解决实际问题，注重分析的逻辑性和解决方案的可操作性。</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3 text-sm">
+                    <div>
+                        <h4 class="font-semibold text-cyan-700">分析思路：</h4>
+                        <ul class="list-disc ml-4 space-y-1">
+                            <li>明确识别问题的性质和影响</li>
+                            <li>准确映射到相关知识领域</li>
+                            <li>深入分析根本原因</li>
+                            <li>提出可操作的解决方案</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-emerald-700">答题技巧：</h4>
+                        <ul class="list-disc ml-4 space-y-1">
+                            <li>运用项目管理理论和工具</li>
+                            <li>注重分析的逻辑性和条理性</li>
+                            <li>解决方案要具体可行</li>
+                            <li>体现项目经理的专业判断</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
