@@ -230,15 +230,27 @@ class ContentLoader {
         document.querySelectorAll('.menu a').forEach(link => {
             link.classList.remove('active');
             link.parentElement.classList.remove('active'); // 移除 li 的激活状态
+            // 移除 DaisyUI 特定的激活样式
+            link.classList.remove('bg-primary');
+            link.classList.remove('text-primary-content');
         });
 
         // 激活当前菜单项
+        let menuItem;
         if (anchor) {
-            const menuItem = document.querySelector(`.menu a[href="#${anchor}"]`);
-            if (menuItem) {
-                menuItem.classList.add('active');
-                menuItem.parentElement.classList.add('active'); // 添加 li 的激活状态
-            }
+            menuItem = document.querySelector(`.menu a[href="#${anchor}"]`);
+        } else {
+            // 如果没有指定锚点，则根据章节ID查找
+            const sectionPrefix = sectionId.split('-')[0]; // 例如从 part1-2 中提取 part1
+            menuItem = document.querySelector(`.menu a[href^="#${sectionPrefix}"]`);
+        }
+
+        if (menuItem) {
+            // 添加 DaisyUI 的激活样式
+            menuItem.classList.add('active');
+            menuItem.classList.add('bg-primary');
+            menuItem.classList.add('text-primary-content');
+            menuItem.parentElement.classList.add('active'); // 添加 li 的激活状态
         }
     }
 }
