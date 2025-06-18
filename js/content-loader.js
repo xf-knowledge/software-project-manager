@@ -230,7 +230,6 @@ class ContentLoader {
         document.querySelectorAll('.menu a').forEach(link => {
             link.classList.remove('active');
             link.parentElement.classList.remove('active'); // 移除 li 的激活状态
-            // 移除 DaisyUI 特定的激活样式
             link.classList.remove('bg-primary');
             link.classList.remove('text-primary-content');
         });
