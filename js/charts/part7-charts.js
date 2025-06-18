@@ -1,7 +1,7 @@
 // 第七部分：《软件工程管理》期中检测 - 图表功能
 
-// 显示答案的通用函数
-function showAnswer(answerId) {
+// 显示详细解析的函数（避免与其他模块冲突，使用part7专用函数名）
+function showAnswerExplanation(answerId) {
     const answerElement = document.getElementById(answerId);
     const button = event.target;
     
@@ -9,9 +9,9 @@ function showAnswer(answerId) {
         const isHidden = answerElement.classList.contains('hidden');
         
         if (isHidden) {
-            // 显示答案
+            // 显示答案解析
             answerElement.classList.remove('hidden');
-            button.textContent = '隐藏答案';
+            button.textContent = '隐藏答案解析';
             button.classList.remove('btn-primary');
             button.classList.add('btn-secondary');
             
@@ -25,7 +25,7 @@ function showAnswer(answerId) {
                 answerElement.style.transform = 'translateY(0)';
             }, 10);
         } else {
-            // 隐藏答案
+            // 隐藏答案解析
             answerElement.style.opacity = '0';
             answerElement.style.transform = 'translateY(-20px)';
             
@@ -39,46 +39,46 @@ function showAnswer(answerId) {
     }
 }
 
-// 题目计时器功能
-let timerInterval;
-let timeElapsed = 0;
+// 期中考试计时器功能
+let midtermTimerInterval;
+let midtermTimeElapsed = 0;
 
 function startTimer() {
     const timerDisplay = document.getElementById('timer-display');
     if (!timerDisplay) return;
     
-    timerInterval = setInterval(() => {
-        timeElapsed++;
-        const minutes = Math.floor(timeElapsed / 60);
-        const seconds = timeElapsed % 60;
+    midtermTimerInterval = setInterval(() => {
+        midtermTimeElapsed++;
+        const minutes = Math.floor(midtermTimeElapsed / 60);
+        const seconds = midtermTimeElapsed % 60;
         timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     }, 1000);
 }
 
 function stopTimer() {
-    if (timerInterval) {
-        clearInterval(timerInterval);
-        timerInterval = null;
+    if (midtermTimerInterval) {
+        clearInterval(midtermTimerInterval);
+        midtermTimerInterval = null;
     }
 }
 
 function resetTimer() {
     stopTimer();
-    timeElapsed = 0;
+    midtermTimeElapsed = 0;
     const timerDisplay = document.getElementById('timer-display');
     if (timerDisplay) {
         timerDisplay.textContent = '00:00';
     }
 }
 
-// 自动保存答案功能
-function saveAnswer(questionId, answer) {
+// 自动保存期中考试答案功能
+function saveMidtermAnswer(questionId, answer) {
     const answers = JSON.parse(localStorage.getItem('midtermAnswers') || '{}');
     answers[questionId] = answer;
     localStorage.setItem('midtermAnswers', JSON.stringify(answers));
 }
 
-function loadAnswers() {
+function loadMidtermAnswers() {
     const answers = JSON.parse(localStorage.getItem('midtermAnswers') || '{}');
     Object.keys(answers).forEach(questionId => {
         const input = document.querySelector(`input[name="${questionId}"][value="${answers[questionId]}"]`);
@@ -89,29 +89,39 @@ function loadAnswers() {
 }
 
 // 期中考试选择题正确答案
-const correctAnswers = {
-    'q1': 'D',   // 质量不是项目三角形的组成部分
-    'q2': 'C',   // 编写代码不是项目经理的主要职责
-    'q3': 'A',   // 甘特图用于项目进度管理
-    'q4': 'D',   // 咨询服务不是项目风险管理的活动
-    'q5': 'C',   // 政府监管机构通常不属于项目干系人
-    'q6': 'D',   // 启动是最初开始的过程组
-    'q7': 'B',   // 变更控制的主要目的是记录和评估变更请求
-    'q8': 'D',   // 挣值分析不是成本估算的方法
-    'q9': 'C',   // 挣值用来衡量进度差异
-    'q10': 'A'   // PDCA循环代表计划-执行-检查-行动
+const midtermCorrectAnswers = {
+    'midterm1': 'D',   // 质量不是项目三角形的组成部分
+    'midterm2': 'C',   // 编写代码不是项目经理的主要职责
+    'midterm3': 'A',   // 甘特图用于项目进度管理
+    'midterm4': 'D',   // 咨询服务不是项目风险管理的活动
+    'midterm5': 'C',   // 政府监管机构通常不属于项目干系人
+    'midterm6': 'D',   // 启动是最初开始的过程组
+    'midterm7': 'B',   // 变更控制的主要目的是记录和评估变更请求
+    'midterm8': 'D',   // 挣值分析不是成本估算的方法
+    'midterm9': 'C',   // 挣值用来衡量进度差异
+    'midterm10': 'A'   // PDCA循环代表计划-执行-检查-行动
 };
 
-// 检查单选题答案并显示反馈
+// 检查期中考试选择题答案并显示反馈（参考part6样式）
 function checkAnswer(questionId) {
+    console.log(`检查答案：${questionId}`);
+    
     const selectedInput = document.querySelector(`input[name="${questionId}"]:checked`);
     const feedbackElement = document.getElementById(`${questionId}-feedback`);
     
-    if (!selectedInput || !feedbackElement) return;
+    console.log(`选中的输入：`, selectedInput);
+    console.log(`反馈元素：`, feedbackElement);
+    
+    if (!selectedInput || !feedbackElement) {
+        console.log('未找到选中的输入或反馈元素');
+        return;
+    }
     
     const selectedValue = selectedInput.value;
-    const correctAnswer = correctAnswers[questionId];
+    const correctAnswer = midtermCorrectAnswers[questionId];
     const isCorrect = selectedValue === correctAnswer;
+    
+    console.log(`选择的答案：${selectedValue}，正确答案：${correctAnswer}，是否正确：${isCorrect}`);
     
     // 清除之前的反馈
     feedbackElement.innerHTML = '';
@@ -119,7 +129,7 @@ function checkAnswer(questionId) {
     
     // 创建反馈内容
     const feedbackContent = document.createElement('div');
-    feedbackContent.className = `alert ${isCorrect ? 'alert-success' : 'alert-error'} mt-3`;
+    feedbackContent.className = `alert ${isCorrect ? 'alert-success' : 'alert-error'} mt-3 flex items-start`;
     
     if (isCorrect) {
         feedbackContent.innerHTML = `
@@ -127,8 +137,8 @@ function checkAnswer(questionId) {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
-                <h4 class="font-bold">回答正确！</h4>
-                <div class="text-sm">你选择了 ${selectedValue}，这是正确答案。</div>
+                <h4 class="font-bold">✅ 回答正确！</h4>
+                <div class="text-sm">你选择了 <span class="font-semibold">${selectedValue}</span>，这是正确答案。</div>
             </div>
         `;
     } else {
@@ -137,15 +147,15 @@ function checkAnswer(questionId) {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <div>
-                <h4 class="font-bold">回答错误</h4>
-                <div class="text-sm">你选择了 ${selectedValue}，正确答案是 ${correctAnswer}。</div>
+                <h4 class="font-bold">❌ 回答错误</h4>
+                <div class="text-sm">你选择了 <span class="font-semibold">${selectedValue}</span>，正确答案是 <span class="font-semibold text-error">${correctAnswer}</span>。</div>
             </div>
         `;
     }
     
     feedbackElement.appendChild(feedbackContent);
     
-    // 添加动画效果
+    // 添加平滑的动画效果
     feedbackContent.style.opacity = '0';
     feedbackContent.style.transform = 'scale(0.9)';
     feedbackContent.style.transition = 'all 0.3s ease';
@@ -155,24 +165,24 @@ function checkAnswer(questionId) {
         feedbackContent.style.transform = 'scale(1)';
     }, 10);
     
-    // 保存答案
-    saveAnswer(questionId, selectedValue);
+    // 保存答案到localStorage
+    saveMidtermAnswer(questionId, selectedValue);
     
     // 更新统计数据
-    updateStats();
+    updateMidtermStats();
 }
 
-// 更新统计数据
-function updateStats() {
-    const totalQuestions = Object.keys(correctAnswers).length;
+// 更新期中考试统计数据
+function updateMidtermStats() {
+    const totalQuestions = Object.keys(midtermCorrectAnswers).length;
     let completedCount = 0;
     let correctCount = 0;
     
-    Object.keys(correctAnswers).forEach(questionId => {
+    Object.keys(midtermCorrectAnswers).forEach(questionId => {
         const selectedInput = document.querySelector(`input[name="${questionId}"]:checked`);
         if (selectedInput) {
             completedCount++;
-            if (selectedInput.value === correctAnswers[questionId]) {
+            if (selectedInput.value === midtermCorrectAnswers[questionId]) {
                 correctCount++;
             }
         }
@@ -192,22 +202,22 @@ function updateStats() {
     // 如果完成所有选择题，显示祝贺信息
     if (completedCount === totalQuestions) {
         setTimeout(() => {
-            showCompletionMessage(accuracy);
+            showMidtermCompletionMessage(accuracy);
         }, 1000);
     }
 }
 
-// 显示完成祝贺信息
-function showCompletionMessage(accuracy) {
+// 显示期中考试完成祝贺信息
+function showMidtermCompletionMessage(accuracy) {
     let message;
     if (accuracy >= 90) {
-        message = '🏆 优秀！选择题正确率达到90%以上，基础扎实！';
+        message = '🏆 优秀！期中考试选择题正确率达到90%以上，基础扎实！';
     } else if (accuracy >= 80) {
-        message = '🎉 良好！选择题正确率很高，继续保持！';
+        message = '🎉 良好！期中考试选择题正确率很高，继续保持！';
     } else if (accuracy >= 70) {
-        message = '👍 不错！选择题有一定基础，还需加强！';
+        message = '👍 不错！期中考试选择题有一定基础，还需加强！';
     } else if (accuracy >= 60) {
-        message = '💪 及格！选择题基础知识还需提升！';
+        message = '💪 及格！期中考试选择题基础知识还需提升！';
     } else {
         message = '📚 加油！建议复习相关知识点后重新答题！';
     }
@@ -235,11 +245,11 @@ function showCompletionMessage(accuracy) {
 // 计算得分功能
 function calculateScore() {
     let score = 0;
-    let totalQuestions = Object.keys(correctAnswers).length;
+    let totalQuestions = Object.keys(midtermCorrectAnswers).length;
     
-    Object.keys(correctAnswers).forEach(questionId => {
+    Object.keys(midtermCorrectAnswers).forEach(questionId => {
         const selectedInput = document.querySelector(`input[name="${questionId}"]:checked`);
-        if (selectedInput && selectedInput.value === correctAnswers[questionId]) {
+        if (selectedInput && selectedInput.value === midtermCorrectAnswers[questionId]) {
             score++;
         }
     });
@@ -312,38 +322,53 @@ function showScore() {
 
 // 页面加载完成后初始化
 document.addEventListener('DOMContentLoaded', function() {
-    // 为选择题添加事件监听器
-    document.querySelectorAll('input[type="radio"]').forEach(input => {
-        input.addEventListener('change', function() {
-            checkAnswer(this.name);
-        });
-    });
-    
-    // 加载之前保存的答案
-    loadAnswers();
-    
-    // 初始化统计数据
-    updateStats();
+    initializePart7();
 });
 
 // 初始化选择题事件监听器（用于动态加载的内容）
 function initializeQuestionListeners() {
     document.querySelectorAll('input[type="radio"]').forEach(input => {
         // 移除已有的监听器，避免重复绑定
-        input.removeEventListener('change', handleRadioChange);
-        input.addEventListener('change', handleRadioChange);
+        input.removeEventListener('change', handleMidtermRadioChange);
+        input.addEventListener('change', handleMidtermRadioChange);
     });
 }
 
-function handleRadioChange() {
+function handleMidtermRadioChange() {
     checkAnswer(this.name);
 }
 
+// Part7专用的初始化函数
+function initializePart7() {
+    console.log('开始初始化 Part7 期中检测页面...');
+    
+    // 等待一段时间确保DOM完全加载
+    setTimeout(() => {
+        // 为所有期中考试的选择题添加事件监听器
+        const midtermRadios = document.querySelectorAll('input[name^="midterm"]');
+        console.log(`找到 ${midtermRadios.length} 个期中考试选择题选项`);
+        
+        midtermRadios.forEach(input => {
+            input.removeEventListener('change', handleMidtermRadioChange);
+            input.addEventListener('change', handleMidtermRadioChange);
+        });
+        
+        // 加载之前保存的答案
+        loadMidtermAnswers();
+        
+        // 初始化统计数据
+        updateMidtermStats();
+        
+        console.log('Part7 期中检测页面初始化完成');
+    }, 100);
+}
+
 // 导出函数供全局使用
-window.showAnswer = showAnswer;
-window.checkAnswer = checkAnswer;
+window.showAnswerExplanation = showAnswerExplanation;
+window.checkMidtermAnswer = checkAnswer;
 window.initializeQuestionListeners = initializeQuestionListeners;
+window.initializePart7 = initializePart7;
 window.startTimer = startTimer;
 window.stopTimer = stopTimer;
 window.resetTimer = resetTimer;
-window.showScore = showScore; 
+window.showMidtermScore = showScore; 
